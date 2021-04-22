@@ -26,19 +26,19 @@
 
     .bgimg,
     .bgimg2 {
-        min-height: 100%;
         background-position: center;
         background-size: cover;
     }
 
     .bgimg {
+        min-height: 100%;
         background-image: url("../img/a2.jpg")
     }
-
     /* background-image: url("../img/wedding_couple.jpg") */
 
     .bgimg2 {
-        background-image: url("../img/flowers.jpg")
+        min-height: 40%;
+        background-image: url("../img/flowers.jpg");
     }
 
     .darkSlateBlue {
@@ -48,47 +48,41 @@
 
 <body>
 
-    <!-- Header / Home-->
-    <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
-        <div class="w3-display-middle w3-text-white w3-center">
-            <h1 class="w3-jumbo">Ashley & Austin</h1>
-            <h2>Are getting married</h2>
-            <h2><b>01.22.2022</b></h2>
-        </div>
-    </header>
-
-    <!-- Navbar (sticky bottom) -->
+    <!-- Navbar (sticky top) -->
     <div class="w3-top w3-hide-small">
         <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-            <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
-            <a href="#us" style="width:25%" class="w3-bar-item w3-button">About</a>
-            <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Wedding</a>
-            <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+            <!-- <a href="home" style="width:25%" class="w3-bar-item w3-button">Home</a> -->
+            <a href="#our-story" style="width:20%" class="w3-bar-item w3-button">Our Story</a>
+            <a href="#wedding" style="width:20%" class="w3-bar-item w3-button">Wedding</a>
+            <a href="#rsvp" style="width:20%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+            <!-- <a href="#wedding-party" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Wedding Party</a> -->
+            <a href="#registry" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Registry</a>
+            <a href="#accommodations" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Accommodations</a>
         </div>
     </div>
 
-    <!-- About / Jane And John -->
-    <div class="w3-container w3-padding-64 darkSlateBlue w3-grayscale-min" id="us">
+    <!-- Header // Home -->
+    <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+        <div class="w3-display-middle w3-text-white w3-center">
+            <h1 class="w3-jumbo">Ashley & Austin</h1>
+            <!-- <h2>Are getting married</h2> -->
+            <h2>-<b>January 22<sup style="font-size: 0.5em;">nd</sup> 2022</b>-</h2>
+        </div>
+    </header>
+
+    <!-- About // Ashley & Austin -->
+    <div class="w3-container w3-padding-64 darkSlateBlue w3-grayscale-min" id="our-story">
         <div class="w3-content">
-            <h1 class="w3-center w3-text-grey"><b>Ashley & Austin</b></h1>
+            <h1 class="w3-center w3-text-grey"><b>Our Story</h1>
             <img class="w3-round w3-grayscale-min" src="../img/a1.jpg" style="width:100%;margin:32px 0">
             <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
                     occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</i>
-            </p><br>
+                    laboris nisi ut aliquip ex ea commodo consequat.</i></p>
             <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Wedding Details</a></p>
         </div>
     </div>
 
-    <!-- Background photo -->
-    <div class="w3-display-container bgimg2">
-        <div class="w3-display-middle w3-text-white w3-center">
-            <h1 class="w3-jumbo">You Are Invited</h1><br>
-            <h2>Of course...</h2>
-        </div>
-    </div>
-
-    <!-- Wedding information -->
+    <!-- When // Where -->
     <div class="w3-container w3-padding-64 darkSlateBlue w3-grayscale-min w3-center" id="wedding">
         <div class="w3-content">
             <h1 class="w3-text-grey"><b>THE WEDDING</b></h1>
@@ -108,7 +102,15 @@
         </div>
     </div>
 
-    <!-- RSVP section -->
+    <!-- Page Transition Photo -->
+    <div class="w3-display-container bgimg2">
+        <div class="w3-display-middle w3-text-white w3-center">
+            <h1 class="w3-jumbo">You Are Invited</h1><br>
+            <h2>Of course...</h2>
+        </div>
+    </div>
+
+    <!-- RSVP Section -->
     <div class="w3-container w3-padding-64 darkSlateBlue w3-center w3-wide" id="rsvp">
         <h1>HOPE YOU CAN MAKE IT!</h1>
         <!-- <p class="w3-large">Kindly Respond By January, 2017</p> -->
@@ -117,7 +119,7 @@
         </p>
     </div>
 
-    <!-- RSVP modal -->
+    <!-- RSVP Modal -->
     <div id="id01" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
             <div class="w3-container w3-white w3-center">
@@ -136,6 +138,53 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Order of Events -->
+    <div class="w3-container w3-padding-64 darkSlateBlue w3-grayscale-min w3-center">
+        <div class="w3-content">
+            <h1 class="w3-center w3-text-grey"><b>Order of Events</h1>
+            Schedule<br />
+        </div>
+    </div>
+
+    <!-- Wedding Party -->
+    <div class="w3-container w3-padding-64 darkSlateBlue w3-grayscale-min w3-center" id="wedding-party">
+        <div class="w3-content">
+            <h1 class="w3-center w3-text-grey"><b>Wedding Party</h1>
+            (hers / his)
+        </div>
+    </div>
+
+    <!-- Photos -->
+    <div class="w3-container w3-padding-64 darkSlateBlue w3-grayscale-min w3-center">
+        <div class="w3-content">
+            <h1 class="w3-center w3-text-grey"><b>Photo</h1>
+            #hashtagForPhotos
+        </div>
+    </div>
+
+    <!-- Registry -->
+    <div class="w3-container w3-padding-64 darkSlateBlue w3-grayscale-min" id="registry">
+        <div class="w3-content w3-center">
+            <h1 class="w3-center w3-text-grey"><b>Registry</h1>
+            <a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank" alt="Registry">
+                To AMAZON Wish list
+            </a>
+        </div>
+    </div>
+
+    <!-- Accommodations -->
+    <div class="w3-container w3-padding-64 darkSlateBlue w3-grayscale-min" id="accommodations">
+        <div class="w3-content">
+            <h1 class="w3-center w3-text-grey"><b>Accommodations</h1>
+            map (google map) // directions<br />
+            hotels // accommodations (links)<br />
+            &nbsp;&nbsp;&nbsp;---Hyatt PLace Bowling Green (Walking Distance)<br >
+            &nbsp;&nbsp;&nbsp;---Hilton Garden
+            &nbsp;&nbsp;&nbsp;---Staybridge
+
         </div>
     </div>
 
