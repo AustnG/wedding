@@ -1,0 +1,61 @@
+body,
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+p {
+  line-height: 2;
+}
+
+.bgimg,
+.bgimg2 {
+  background-position: center;
+  background-size: cover;
+}
+
+.bgimg {
+  min-height: 100%;
+  background-image: url("../img/a2.jpg");
+}
+
+/* background-image: url("../img/wedding_couple.jpg") */
+
+.bgimg2 {
+  min-height: 40%;
+  background-image: url("../img/flowers.jpg");
+}
+
+.content {
+  padding: 16px;
+}
+
+.darkSlateBlue {
+  background-color: darkslateblue;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}

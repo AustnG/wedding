@@ -41,6 +41,7 @@
             <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
             <hr class="w3-border-grey" style="margin:auto;width:40%">
             <p class="w3-large w3-center">01 - 22 - 2022</p>
+            <p class="w3-center" id="timer"></p>
         </div>
         <div class="w3-display-bottomleft w3-padding-large">
             <!-- owered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> -->
@@ -48,5 +49,30 @@
     </div>
 
 </body>
+
+<script>
+    var countDownDate = new Date("Jan 22, 2022 18:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+        var now = new Date().getTime();         // Get today's date and time
+        var distance = countDownDate - now;     // Find the distance between now and the count down date
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="timer"
+        document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "";
+        }
+    }, 1000);
+</script>
 
 </html>
