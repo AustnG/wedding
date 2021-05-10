@@ -9,76 +9,131 @@
 
 <body>
 
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <!-- TO DO: -->
+    <div class="w3-padding" style="background-color: yellow; color:red; font-weight: bolder; padding-left: 500px !important;">
+        <ul>
+            <lh>Stuff to add:</lh>
+            <li>Add to Calendar (Outlook, Google Calendar, iCal, etc.)</li>
+            <li>Schedule</li>
+            <li>Wedding Party</li>
+            <li>RSVP</li>
+            <li>Photos</li>
+            <li>Registry</li>
+        </ul>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <!-- HEADER -->
     <header class="header">
-        <div style="display: flex; justify-content: space-between;">
+        <div style="display:flex; justify-content:space-between;">
             <div>January 22, 2022&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Bowling Green, KY</div>
-            <div>#hashtag</div>
+            <div>#GreerWedding</div>
         </div>
         <div>
             <h1>Ashley & Austin</h1>
         </div>
     </header>
 
-    <!-- Navbar (sticky top) (Previous version) -->
-    <div class="w3-hide-small" id="navbar" style="z-index:1; background-color: white;">
+    <!-- Navbar (sticky) -->
+    <div class="w3-hide-small" id="navbar">
         <div class="w3-bar w3-center w3-padding w3-opacity-min">
-            <a href="#our-story" style="width:20%" class="w3-bar-item w3-button">Our Story</a>
-            <a href="#wedding" style="width:20%" class="w3-bar-item w3-button">Wedding</a>
-            <a href="#rsvp" style="width:20%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
-            <a href="#registry" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Registry</a>
-            <a href="#accommodations" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Accommodations</a>
+            <!-- <a href="#about" style="width:20%" class="w3-bar-item w3-button">About Us</a> -->
+            <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Wedding</a>
+            <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button">RSVP</a>
+            <a href="#registry" style="width:25%" class="w3-bar-item w3-button">Registry</a>
+            <a href="#accommodations" style="width:25%" class="w3-bar-item w3-button">Accommodations</a>
         </div>
     </div>
+    <!-- END HEADER -->
 
-    <!-- Header // Home (Original) -->
-    <div class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home" class="content">
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <!-- MAIN CONTENT -->
+    <button onclick="topFunction()" id="bttBtn" title="Back to top">Top</button>
+
+    <!-- Hero -->
+    <div class="content w3-display-container w3-wide bgimg" id="home">
+        <!-- <img src="../img/a2.jpg" style="width:100%;"> -->
         <div class="w3-display-middle w3-text-white w3-center">
             <h1 class="w3-jumbo">Ashley & Austin</h1>
-            <!-- <h2>Are getting married</h2> -->
+            <h2>Are getting married</h2>
             <h2>- <b>January 22<sup style="font-size: 0.5em;">nd</sup> 2022</b> -</h2>
         </div>
     </div>
 
-    <!-- About // Ashley & Austin -->
-    <div class="w3-container w3-padding-64 darkSlateBlue w3-grayscale-min" id="our-story">
-        <div class="w3-content">
-            <h1 class="w3-center w3-text-grey"><b>Our Story</h1>
-            <img class="w3-round w3-grayscale-min" src="../img/a1.jpg" style="width:100%;margin:32px 0">
-            <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</i></p>
-            <br /><br /><br />
-            <ul>
-                <lh>Stuff to add:</lh>
-                <li>Add to Calendar (Outlook, Google Calendar, iCal, etc.)</li>
-            </ul>
-
-            <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Wedding Details</a></p>
+    <!-- Ashley & Austin -->
+    <div class="w3-container w3-padding-64">
+        <div class="w3-content w3-center">
+            <h1 class="w3-jumbo">Ashley Stephenson</h1>
+            and
+            <h1 class="w3-jumbo">Austin Greer</h1>
+            #GreerWedding
         </div>
     </div>
 
+    <!-- About Us
+        <div class="w3-container" id="about">
+            <div class="w3-content">
+                <h1 class="w3-center w3-text-grey"><b>Our Story</h1>
+                <img class="w3-round" src="../img/a1.jpg" style="width:100%;margin:32px 0">
+                <p><i>Patrick and Catherine first met at Centre College though didn't start dating until a Centre get together in March 2016. They quickly knew it was meant to be and Patrick followed Catherine to Nashville for her residency. Patrick proposed March 30th, 2019, just 2 years before their reception! Though COVID changed the plans, they were officially wed June 27th, 2020 with immediate family present at Catherine's childhood home.</i></p>           
+         </div>
+    </div>-->
+
     <!-- When // Where -->
-    <div class="w3-container w3-padding-64 darkSlateBlue w3-grayscale-min w3-center" id="wedding">
+    <div class="w3-container w3-center" id="wedding">
+        <div class="w3-row">
+            <div class="w3-half w3-padding-large">
+                <img class="w3-round-large" src="../img/c2.webp" style="width:100%;">
+            </div>
+            <div class="w3-half w3-padding-large">
+                <h2>When</h2>
+                <!-- <p>Wedding Ceremony - 3:00pm</p> -->
+                <p>Reception & Dinner - 6:00pm</p>
+                <h2>Where</h2>
+                <p>The Charleston</p>
+                <p>923 College St, Bowling Green, KY 42101</p>
+                Where (Reception) // Parking & How to get in<br/>
+                <br/>
+                Parking is available on site though no vehicles may be left on the premises overnight. Uber and Lyft are available both to and from the venue.
+            </div>
+        </div>
+    </div>
+
+    <!-- Wedding Party -->
+    <div class="w3-container w3-padding-64 w3-center" id="wedding-party">
         <div class="w3-content">
-            <h1 class="w3-text-grey"><b>THE WEDDING</b></h1>
-            <img class="w3-round-large w3-grayscale-min" src="../img/c2.webp" style="width:80%;margin:64px 0">
+            <h1 class="w3-center w3-text-grey"><b>Wedding Party</h1>
             <div class="w3-row">
                 <div class="w3-half">
-                    <h2>When</h2>
-                    <p>Wedding Ceremony - 3:00pm</p>
-                    <p>Reception & Dinner - 6:00pm</p>
+                    Brittnye Denen - Marton of Honor<br />
+                    Katelyn Waters - <br />
+                    Welsey Alvin Cain<br />
+                    Anna Marsili<br />
+                    Camilla Wilson<br />
+                    Catherine Stephenson
                 </div>
                 <div class="w3-half">
-                    <h2>Where</h2>
-                    <p>The Charleston</p>
-                    <p>923 College St, Bowling Green, KY 42101</p>
+                    Zach Greer<br />
+                    Casey Greer - Groomswoman<br />
+                    Duncan McKenzie - Groomsman<br />
+                    Jordan Speer - Groomsman<br />
+                    Max Schott - Groomsman<br />
+                    Michael Stephenson
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Page Transition Photo -->
-    <div class="w3-display-container bgimg2">
+    <div class="w3-display-container w3-padding-64 bgimg2" style="height: 100px;">
         <div class="w3-display-middle w3-text-white w3-center">
             <h1 class="w3-jumbo">You Are Invited</h1><br>
             <h2>Of course...</h2>
@@ -86,7 +141,7 @@
     </div>
 
     <!-- RSVP Section -->
-    <div class="w3-container w3-padding-64 darkSlateBlue w3-center w3-wide" id="rsvp">
+    <div class="w3-container w3-padding-16 w3-center w3-wide" id="rsvp">
         <h1>HOPE YOU CAN MAKE IT!</h1>
         <!-- <p class="w3-large">Kindly Respond By January, 2017</p> -->
         <p class="w3-xlarge">
@@ -96,28 +151,35 @@
 
     <!-- RSVP Modal -->
     <div id="id01" class="w3-modal">
-        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
-            <div class="w3-container w3-white w3-center">
-                <h1 class="w3-wide">CAN YOU COME?</h1>
-                <p>We really hope you can make it.</p>
-                <form>
-                    <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
-                </form>
-                <p><i>Sincerely, Ashley & Austin</i></p>
-                <div class="w3-row">
-                    <div class="w3-half">
-                        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
-                    </div>
-                    <div class="w3-half">
-                        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
-                    </div>
-                </div>
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:16px;max-width:600px">
+            <div>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSckQZrYMrasuXMWAWwu6V6lCUfLPaG7PcU7mac26u6efCrfNw/viewform?embedded=true" width="100%" height="400px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
+
+            <!--
+                <div class="w3-container w3-white w3-center">
+                    <h1 class="w3-wide">CAN YOU COME?</h1>
+                    <p>We really hope you can make it.</p>
+                    <form>
+                        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+                    </form>
+                    <p><i>Sincerely, Ashley & Austin</i></p>
+                    <div class="w3-row">
+                        <div class="w3-half">
+                            <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
+                        </div>
+                        <div class="w3-half">
+                            <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
+                        </div>
+                    </div>
+                </div>-->
+
         </div>
     </div>
 
     <!-- Order of Events -->
-    <div class="w3-container w3-padding-64 darkSlateBlue w3-grayscale-min w3-center">
+    <!--
+    <div class="w3-container w3-padding-16 w3-center">
         <div class="w3-content">
             <h1 class="w3-center w3-text-grey"><b>Order of Events</h1>
             2:00p - Photos<br />
@@ -144,32 +206,10 @@
             8:00-10:00p - Dancing
         </div>
     </div>
-
-    <!-- Wedding Party -->
-    <div class="w3-container w3-padding-64 darkSlateBlue w3-grayscale-min w3-center" id="wedding-party">
-        <div class="w3-content">
-            <h1 class="w3-center w3-text-grey"><b>Wedding Party</h1>
-            <div class="w3-row">
-                <div class="w3-half">
-                    Brittnye Denen - Marton of Honor<br />
-                    Katelyn Waters - <br />
-                    Welsey Alvin Cain<br />
-                    Anna Marsili<br />
-                    Camilla Wilson<br />
-                </div>
-                <div class="w3-half">
-                    Zach Greer<br />
-                    Duncan McKenzie - Groomsman<br />
-                    Casey Greer - Groomswoman<br />
-                    Jordan Speer - Groomsman<br />
-                    Max Schott - Groomsman<br />
-                </div>
-            </div>
-        </div>
-    </div>
+    -->
 
     <!-- Photos -->
-    <div class="w3-container w3-padding-64 darkSlateBlue w3-grayscale-min w3-center">
+    <div class="w3-container w3-padding-16 w3-center">
         <div class="w3-content">
             <h1 class="w3-center w3-text-grey"><b>Photo</h1>
             #hashtagForPhotos
@@ -177,52 +217,68 @@
     </div>
 
     <!-- Registry -->
-    <div class="w3-container w3-padding-64 darkSlateBlue w3-grayscale-min" id="registry">
+    <div class="w3-container w3-padding-16" id="registry">
         <div class="w3-content w3-center">
             <h1 class="w3-center w3-text-grey"><b>Registry</h1>
             <a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank" alt="Registry">
                 To AMAZON Wish list
             </a>
+            <br />
+            QR Codes (PayPal // Venmo // etc.)
         </div>
     </div>
 
     <!-- Accommodations -->
-    <div class="w3-container w3-padding-64 darkSlateBlue w3-grayscale-min" id="accommodations">
-        <div class="w3-content">
-            <h1 class="w3-center w3-text-grey"><b>Accommodations</h1>
-            map (google map) // directions<br />
-            hotels // accommodations (links)<br />
-            &nbsp;&nbsp;&nbsp;---Hyatt PLace Bowling Green (Walking Distance)<br>
-            &nbsp;&nbsp;&nbsp;---Hilton Garden
-            &nbsp;&nbsp;&nbsp;---Staybridge
-
-            Parking is available on site though no vehicles may be left on the premises overnight. Uber and Lyft are available both to and from the venue.
-
-
+    <div class="w3-container w3-padding-16" id="accommodations">
+        <div class="w3-content w3-center">
+            <h1 class="w3-text-grey"><b>Accommodations</h1>
+            <div>
+                Guest Accommodations // Places to Stay // Travel & Transportation<br />
+                <br />
+                <br />
+                map (google map) // directions<br />
+                hotels // accommodations (links)<br />
+                &nbsp;&nbsp;&nbsp;---Hyatt PLace Bowling Green (Walking Distance)<br>
+                &nbsp;&nbsp;&nbsp;---Hilton Garden<br>
+                &nbsp;&nbsp;&nbsp;---Staybridge
+            </div>
         </div>
     </div>
 
+
     <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-16">
+    <footer class="w3-center w3-padding-16 w3-black">
         <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
         <p>&copy; Austin Greer 2021</p>
     </footer>
-    <div class="w3-hide-small" style="margin-bottom:32px"> </div>
+    <!-- <div class="w3-hide-small" style="margin-bottom:32px"> </div> -->
 
 </body>
 
 <script>
-    window.onscroll = function () { myFunction() };
+    window.onscroll = function () { scrollFunction() }
 
     var navbar = document.getElementById("navbar");
     var sticky = navbar.offsetTop;
+    var mybutton = document.getElementById("bttBtn");
 
-    function myFunction() {
+    function scrollFunction() {
         if (window.pageYOffset >= sticky) {
             navbar.classList.add("sticky")
         } else {
             navbar.classList.remove("sticky");
         }
+
+        if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     }
 </script>
 
