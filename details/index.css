@@ -1,0 +1,30 @@
+.bgimg,
+.bgimg2 {
+  background-position: center;
+  background-size: cover;
+}
+
+.bgimg {
+  min-height: 100%;
+  background-image: url("../img/a2.jpg");
+}
+
+.bgimg2 {
+  min-height: 100%;
+  background-image: url("../img/flowers.jpg");
+}
+
+/*
+.content {
+  padding: 16px 0px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 600px;
+}/
