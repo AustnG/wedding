@@ -1,22 +1,10 @@
-.bgimg,
-.bgimg2 {
-  background-position: center;
-  background-size: cover;
-}
-
-.bgimg {
-  min-height: 100%;
-  background-image: url("../img/a2.jpg");
-}
-
 .bgimg2 {
   min-height: 100%;
   background-image: url("../img/flowers.jpg");
 }
 
-/*
 .content {
-  padding: 16px 0px;
+  padding: 0px 0px 16px;
 }
 
 .sticky {
@@ -26,5 +14,5 @@
 }
 
 .sticky + .content {
-  padding-top: 600px;
-}/
+  padding-top: 55px;
+}

@@ -4,9 +4,54 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="/details/index.css">
+<!-- <link rel="stylesheet" href="/details/gallery1.css"> -->
+<link rel="stylesheet" href="/details/gallery2.css">
+
+<style>
+    .button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #f4511e;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+</style>
 
 <body>
 
@@ -48,55 +93,101 @@
     </div>
 
     <!-- Back to Top Button -->
-    <!-- <button onclick="topFunction()" id="bttBtn" title="Back to top">Top</button> -->
+    <button onclick="topFunction()" id="bttBtn" title="Back to top">
+        <i class="fa fa-toggle-up" style="color:darkslateblue;"></i>
+    </button>
+
+
 
     <!-- MAIN CONTENT -->
-
     <!-- Hero -->
-    <div class="content" style="height: 800px; width:100%; overflow: hidden; position: center;">
-        <img src="../img/a2.jpg" style="width:100%; margin: -150px 0px 0px 0px;">
+    <div class="content" style="height: auto; width:100%; overflow: hidden; position: center;">
+        <img src="../img/a2.jpg" style="width:100%;">
     </div>
 
     <!-- When // Where -->
+    <a id="wedding" style="position:relative; top:-55px;"></a>
     <div class="w3-container w3-center" id="wedding">
-        <div class="w3-row">
-            <div class="w3-half w3-padding-large">
-                <img class="w3-round-large" src="../img/c2.webp" style="width:100%;">
-            </div>
-            <div class="w3-half w3-padding-large">
-                <h2>When</h2>
-                <!-- <p>Wedding Ceremony - 3:00pm</p> -->
-                <p>Reception & Dinner - 6:00pm</p>
-                <h2>Where</h2>
-                <p>The Charleston</p>
-                <p>923 College St, Bowling Green, KY 42101</p>
-                Where (Reception) // Parking & How to get in<br />
-                <br /> Parking is available on site though no vehicles may be left on the premises overnight. Uber and Lyft are available both to and from the venue.<br />
-                <br /> WHERE IS THE PARKING???
-            </div>
-        </div>
+        <h2>January 22, 2022</h2>
+        <p>6:00pm</p>
+        <h2>The Charleston</h2>
+        <p>
+            923 College St, Bowling Green, KY 42101<br />
+            How to get in<br />
+            <br />
+            Parking is available on site. No vehicles may be left on the premises overnight.<br />
+            Uber and Lyft are available both to and from the venue.<br />
+        </p>
+        <br />
+
+        <br />
+
+        <br />
+        <br />
+        <img class="w3-round-large" src="../img/c2.webp" style="width:100%;">
+
     </div>
 
     <!-- Wedding Party -->
-    <div class="w3-container w3-padding-64 w3-center" id="wedding-party">
+    <div class="w3-container w3-padding-64" id="wedding-party">
         <div class="w3-content">
             <h1 class="w3-center w3-text-grey"><b>Wedding Party</h1>
             <div class="w3-row">
                 <div class="w3-half">
-                    Brittnye Denen - Marton of Honor<br />
-                    Katelyn Waters - Bridesmaid <br />
-                    Welsey Alvin Cain<br />
-                    Anna Marsili<br />
-                    Camilla Wilson<br />
-                    Catherine Stephenson
+                    <table>
+                        <tr>
+                            <td>Brittnye Denen</td>
+                            <td>Maid/Matron of Honor</td>
+                        </tr>
+                        <tr>
+                            <td>Katelyn Waters</td>
+                            <td>Bridesmaid</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin Cain</td>
+                            <td>Bridesmaid</td>
+                        </tr>
+                        <tr>
+                            <td>Anna Marsili</td>
+                            <td>Bridesmaid</td>
+                        </tr>
+                        <tr>
+                            <td>Camilla Wilson</td>
+                            <td>Bridesmaid</td>
+                        </tr>
+                        <tr>
+                            <td>Catherine Stephenson</td>
+                            <td>Bridesmaid</td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="w3-half">
-                    Zach Greer<br />
-                    Casey Greer - Groomswoman<br />
-                    Duncan McKenzie - Groomsman<br />
-                    Jordan Speer - Groomsman<br />
-                    Max Schott - Groomsman<br />
-                    Michael Stephenson
+                    <table>
+                        <tr>
+                            <td>Zach Greer</td>
+                            <td>Best Man</td>
+                        </tr>
+                        <tr>
+                            <td>Casey Greer</td>
+                            <td>Groomswoman</td>
+                        </tr>
+                        <tr>
+                            <td>Duncan McKenzie</td>
+                            <td>Groomsman</td>
+                        </tr>
+                        <tr>
+                            <td>Jordan Speer</td>
+                            <td>Groomsman</td>
+                        </tr>
+                        <tr>
+                            <td>Max Schott</td>
+                            <td>Groomsman</td>
+                        </tr>
+                        <tr>
+                            <td>Michael Stephenson</td>
+                            <td>Groomsman</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -111,7 +202,8 @@
     </div>
 
     <!-- RSVP Section -->
-    <div class="w3-container w3-padding-16 w3-center w3-wide" id="rsvp">
+    <div class="w3-container w3-padding-16 w3-center w3-wide">
+        <a id="rsvp" style="position:relative; top:-55px;"></a>
         <h1>HOPE YOU CAN MAKE IT!</h1>
         <!-- <p class="w3-large">Kindly Respond By January, 2017</p> -->
         <p class="w3-xlarge">
@@ -148,61 +240,169 @@
     </div>
 
     <!-- Photos -->
-    <div class="w3-container w3-padding-16 w3-center">
-        <div class="w3-content">
-            <h1 class="w3-center w3-text-grey"><b>Photo</h1>
-            #hashtagForPhotos
+    <div class="w3-container w3-padding-16">
+        <h1 class="w3-center w3-text-grey"><b>Photos // #GreerWedding</h1>
+
+        <!-- Gallery 1 -->
+        <!--
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="../img/gallery1/img_lights_wide.jpg" style="width:100%">
+                <div class="text">Northern Lights</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="../img/gallery1/img_mountains_wide.jpg" style="width:100%">
+                <div class="text">Mountains</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="../img/gallery1/img_nature_wide.jpg" style="width:100%">
+                <div class="text">Nature</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="../img/gallery1/img_snow_wide.jpg" style="width:100%">
+                <div class="text">Snowy Peaks</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
         </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        -->
+
+        <!-- Gallery 2 -->
+
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="../img/gallery2/img_5terre_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="../img/gallery2/img_lights_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="../img/gallery2/img_mountains_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="../img/gallery2/img_nature_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="../img/gallery2/img_snow_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="../img/gallery2/img_woods_wide.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="../img/gallery2/img_5terre_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../img/gallery2/img_lights_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../img/gallery2/img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../img/gallery2/img_nature_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../img/gallery2/img_snow_wide.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../img/gallery2/img_woods_wide.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Registry -->
-    <div class="w3-container w3-padding-16" id="registry">
+    <div class="w3-container w3-padding-16">
+        <a id="registry" style="position:relative; top:-55px;"></a>
         <div class="w3-content w3-center">
             <h1 class="w3-center w3-text-grey"><b>Registry</h1>
             <a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank" alt="Registry">
-                To AMAZON Wish list
+                <img src="../img/registry.jpg" alt="Registry">
             </a>
+            <br />
+            <br />
+            <button class="button" style="vertical-align:middle"><span>Amazon</span></button>
+            <br />
             <br />
             QR Codes (PayPal // Venmo // etc.)
         </div>
     </div>
 
     <!-- Accommodations -->
-    <div class="w3-container w3-padding-16" id="accommodations">
+    <div class="w3-container w3-padding-16">
+        <a id="accommodations" style="position:relative; top:-55px;"></a>
         <div class="w3-content w3-center">
             <h1 class="w3-text-grey"><b>Accommodations</h1>
         </div>
         <div class="w3-row-padding w3-center w3-margin-top">
             <div class="w3-third">
                 <div class="w3-card w3-container" style="min-height:460px">
-                    <h3>Hyatt PLace Bowling Green</h3>
-                    +++picture+++
-                    <p>Address</p>
+                    <h3>Hyatt Place Bowling Green</h3>
+                    <img src="../img/h1.jpg" style="height:200px; width:100%;">
+                    <p>1347 Center St, Bowling Green, KY 42101</p>
                     <p>Website Link</p>
-                    <p>Distance from Venue: (Walking Distance)</p>
-                    <p>Google Maps Directions to venue</p>
+                    <p>Distance from Venue: ???</p>
+                    <button style="vertical-align:middle">Directions</button>
                 </div>
             </div>
 
             <div class="w3-third">
                 <div class="w3-card w3-container" style="min-height:460px">
-                    <h3>Hilton Garden</h3>
-                    +++picture+++
-                    <p>Address</p>
+                    <h3>Hilton Garden Inn</h3>
+                    <img src="../img/h2.jpg" style="height:200px; width:100%;">
+                    <p>1020 Wilkinson Trace, Bowling Green, KY 42103</p>
                     <p>Website Link</p>
-                    <p>Distance from Venue: (Walking Distance)</p>
-                    <p>Google Maps Directions to venue</p>
+                    <p>Distance from Venue: ???</p>
+                    <button style="vertical-align:middle">Directions</button>
                 </div>
             </div>
 
             <div class="w3-third">
                 <div class="w3-card w3-container" style="min-height:460px">
                     <h3>Staybridge</h3>
-                    +++picture+++
-                    <p>Address</p>
+                    <img src="../img/h3a.jpg" style="height:200px; width:100%;">
+                    <p>680 Campbell Ln, Bowling Green, KY 42101</p>
                     <p>Website Link</p>
-                    <p>Distance from Venue: (Walking Distance)</p>
-                    <p>Google Maps Directions to venue</p>
+                    <p>Distance from Venue: ???</p>
+                    <button style="vertical-align:middle">Directions</button>
                 </div>
             </div>
         </div>
@@ -216,31 +416,8 @@
 
 </body>
 
-<script>
-    window.onscroll = function () { scrollFunction() }
-
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-    var mybutton = document.getElementById("bttBtn");
-
-    function scrollFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
-
-        if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
-
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script>
+<script src="./scrolling.js"></script>
+<script src="./gallery1.js"></script>
+<script src="./gallery2.js"></script>
 
 </html>
