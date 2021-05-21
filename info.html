@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Greer Wedding</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/gallery.css">
+
+<body>
+
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <!-- TO DO: --
+    <div class="w3-padding" style="background-color: yellow; color:red; font-weight: bolder;">
+        <ul>
+            <lh>Stuff to add:</lh>
+            <li>Add to Calendar (Outlook, Google Calendar, iCal, etc.)</li>
+            <li>Schedule</li>
+            <li>Wedding Party</li>
+            <li>RSVP</li>
+            <li>Photos</li>
+        </ul>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <header>
+        <div class="navbar">
+            <a href="#" class="logo">ASHLEY & AUSTIN</a>
+            <div class="right" id="full">
+                <a href="./home.html">Home</a>
+                <a href="" class="active">Info</a>
+                <a href="./rsvp.html">RSVP</a>
+                <a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank" alt="Registry">Registry</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div id="mini">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Nav Modal -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="./home.html">Home</a>
+            <a href="./info.html">Info</a>
+            <a href="./rsvp.html">RSVP</a>
+            <a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank" alt="Registry">Registry</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Info -->
+    <div class="w3-row-padding w3-margin">
+
+        <div class="w3-center" style="margin-top:77px">
+            <h1><b>Ceremony & Celebration</b></h1>
+        </div>
+
+        <div class="w3-third w3-center">
+            <div class="w3-container" style="min-height:400px">
+                <h3><b>Our wedding day</b></h3>
+                <img src="./img/info1.jpg">
+                <p>Jan 22nd, 2022</p>
+                <p>It's the day after Austin's birthday</p>
+                <button>Add to Calendar</button>
+            </div>
+        </div>
+
+        <div class="w3-third w3-center">
+            <div class="w3-container" style="min-height:400px">
+                <h3><b>Ceremony</b></h3>
+                <img src="./img/info2.jpg">
+                <p>4:00 PM</p>
+                <p>Intimate ceremony with family</p>
+                [ drop down with wedding party in it]
+            </div>
+        </div>
+
+        <div class="w3-third w3-center">
+            <div class="w3-container" style="min-height:400px">
+                <h3><b>Reception</b></h3>
+                <img src="./img/info3.jpg">
+                <p>6:00 PM</p>
+                <p>923 College St<br />Bowling Green, KY</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Wedding Party -->
+    <div class="w3-container w3-padding-16" id="wedding-party">
+        <div class="w3-content">
+            <h1 class="w3-center w3-text-grey"><b>Wedding Party</h1>
+            <div class="w3-row">
+                <div class="w3-half">
+                    <table>
+                        <tr>
+                            <td>Brittnye Denen</td>
+                            <td>Maid/Matron of Honor</td>
+                        </tr>
+                        <tr>
+                            <td>Katelyn Waters</td>
+                            <td>Bridesmaid</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin Cain</td>
+                            <td>Bridesmaid</td>
+                        </tr>
+                        <tr>
+                            <td>Anna Marsili</td>
+                            <td>Bridesmaid</td>
+                        </tr>
+                        <tr>
+                            <td>Camilla Wilson</td>
+                            <td>Bridesmaid</td>
+                        </tr>
+                        <tr>
+                            <td>Catherine Stephenson</td>
+                            <td>Bridesmaid</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="w3-half">
+                    <table>
+                        <tr>
+                            <td>Zach Greer</td>
+                            <td>Best Man</td>
+                        </tr>
+                        <tr>
+                            <td>Casey Greer</td>
+                            <td>Groomswoman</td>
+                        </tr>
+                        <tr>
+                            <td>Duncan McKenzie</td>
+                            <td>Groomsman</td>
+                        </tr>
+                        <tr>
+                            <td>Jordan Speer</td>
+                            <td>Groomsman</td>
+                        </tr>
+                        <tr>
+                            <td>Max Schott</td>
+                            <td>Groomsman</td>
+                        </tr>
+                        <tr>
+                            <td>Michael Stephenson</td>
+                            <td>Groomsman</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photos -->
+    <div class="w3-container w3-padding-64">
+        <h1 class="w3-center w3-text-grey"><b>#GreerWedding</h1>
+
+        <!-- Gallery 1 -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="../img/gallery1/img_lights_wide.jpg" style="width:100%">
+                <div class="text">Northern Lights</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="../img/gallery1/img_mountains_wide.jpg" style="width:100%">
+                <div class="text">Mountains</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="../img/gallery1/img_nature_wide.jpg" style="width:100%">
+                <div class="text">Nature</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="../img/gallery1/img_snow_wide.jpg" style="width:100%">
+                <div class="text">Snowy Peaks</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-padding-16 w3-black">
+        <div class="AaA">A&A</div>
+        <p>&copy; Austin Greer 2021</p>
+    </footer>
+
+</body>
+
+<script src="./js/scrolling.js"></script>
+<script src="./js/nav.js"></script>
+<script src="./js/gallery.js"></script>
+
+
+</html>

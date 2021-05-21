@@ -1,0 +1,18 @@
+.bgimg2 {
+  min-height: 100%;
+  background-image: url("../img/flowers.jpg");
+}
+
+.content {
+  padding: 0px 0px 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 55px;
+}
