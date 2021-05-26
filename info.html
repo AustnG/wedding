@@ -8,6 +8,62 @@
 <link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet" href="./css/gallery.css">
 
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
 <body>
 
     <!-- -------------------------------------------------------------------------------------------------------- -->
@@ -66,7 +122,7 @@
         </div>
 
         <div class="w3-third w3-center">
-            <div class="w3-container" style="min-height:400px">
+            <div class="w3-container" style="min-height:300px">
                 <h3><b>Our wedding day</b></h3>
                 <img src="./img/info1.svg">
                 <p>Jan 22nd, 2022</p>
@@ -76,89 +132,97 @@
         </div>
 
         <div class="w3-third w3-center">
-            <div class="w3-container" style="min-height:400px">
+            <div class="w3-container" style="min-height:300px">
                 <h3><b>Ceremony</b></h3>
                 <img src="./img/info2.svg">
                 <p>4:00 PM</p>
                 <p>Intimate ceremony with family</p>
-                [ drop down with wedding party in it]
+                <button id="myBtn">Wedding Party</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <!-- Wedding Party -->
+                        <div class="w3-container w3-padding-16" id="wedding-party">
+                            <div class="w3-content">
+                                <h1 class="w3-center w3-text-grey"><b>Wedding Party</h1>
+                                <div class="w3-row">
+                                    <div class="w3-half">
+                                        <table>
+                                            <tr>
+                                                <td>Brittnye Denen</td>
+                                                <td>Maid/Matron of Honor</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Katelyn Waters</td>
+                                                <td>Bridesmaid</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Alvin Cain</td>
+                                                <td>Bridesmaid</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Anna Marsili</td>
+                                                <td>Bridesmaid</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Camilla Wilson</td>
+                                                <td>Bridesmaid</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Catherine Stephenson</td>
+                                                <td>Bridesmaid</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="w3-half">
+                                        <table>
+                                            <tr>
+                                                <td>Zach Greer</td>
+                                                <td>Best Man</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Casey Greer</td>
+                                                <td>Groomswoman</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Duncan McKenzie</td>
+                                                <td>Groomsman</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jordan Speer</td>
+                                                <td>Groomsman</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Max Schott</td>
+                                                <td>Groomsman</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Michael Stephenson</td>
+                                                <td>Groomsman</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="w3-third w3-center">
-            <div class="w3-container" style="min-height:400px">
+            <div class="w3-container" style="min-height:300px">
                 <h3><b>Reception</b></h3>
                 <img src="./img/info3.svg">
                 <p>6:00 PM</p>
                 <p>923 College St<br />Bowling Green, KY</p>
+                <button>Directions</button>
             </div>
         </div>
 
-    </div>
-
-    <!-- Wedding Party -->
-    <div class="w3-container w3-padding-16" id="wedding-party">
-        <div class="w3-content">
-            <h1 class="w3-center w3-text-grey"><b>Wedding Party</h1>
-            <div class="w3-row">
-                <div class="w3-half">
-                    <table>
-                        <tr>
-                            <td>Brittnye Denen</td>
-                            <td>Maid/Matron of Honor</td>
-                        </tr>
-                        <tr>
-                            <td>Katelyn Waters</td>
-                            <td>Bridesmaid</td>
-                        </tr>
-                        <tr>
-                            <td>Alvin Cain</td>
-                            <td>Bridesmaid</td>
-                        </tr>
-                        <tr>
-                            <td>Anna Marsili</td>
-                            <td>Bridesmaid</td>
-                        </tr>
-                        <tr>
-                            <td>Camilla Wilson</td>
-                            <td>Bridesmaid</td>
-                        </tr>
-                        <tr>
-                            <td>Catherine Stephenson</td>
-                            <td>Bridesmaid</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="w3-half">
-                    <table>
-                        <tr>
-                            <td>Zach Greer</td>
-                            <td>Best Man</td>
-                        </tr>
-                        <tr>
-                            <td>Casey Greer</td>
-                            <td>Groomswoman</td>
-                        </tr>
-                        <tr>
-                            <td>Duncan McKenzie</td>
-                            <td>Groomsman</td>
-                        </tr>
-                        <tr>
-                            <td>Jordan Speer</td>
-                            <td>Groomsman</td>
-                        </tr>
-                        <tr>
-                            <td>Max Schott</td>
-                            <td>Groomsman</td>
-                        </tr>
-                        <tr>
-                            <td>Michael Stephenson</td>
-                            <td>Groomsman</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- Photos -->
@@ -170,26 +234,26 @@
 
             <div class="mySlides fade">
                 <div class="numbertext">1 / 4</div>
-                <img src="../img/gallery1/img_lights_wide.jpg" style="width:100%">
-                <div class="text">Northern Lights</div>
+                <img src="./img/02.jpg" style="width:100%;">
+                <div class="text">Engagement Photos</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 4</div>
-                <img src="../img/gallery1/img_mountains_wide.jpg" style="width:100%">
-                <div class="text">Mountains</div>
+                <img src="./img/03.jpg" style="width:100%">
+                <div class="text">@La Gala</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 4</div>
-                <img src="../img/gallery1/img_nature_wide.jpg" style="width:100%">
-                <div class="text">Nature</div>
+                <img src="./img/04.jpg" style="width:100%">
+                <div class="text">Redwoods</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">4 / 4</div>
-                <img src="../img/gallery1/img_snow_wide.jpg" style="width:100%">
-                <div class="text">Snowy Peaks</div>
+                <img src="./img/06.jpg" style="width:100%">
+                <div class="text">DJing</div>
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -217,6 +281,34 @@
 <script src="./js/scrolling.js"></script>
 <script src="./js/nav.js"></script>
 <script src="./js/gallery.js"></script>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 
 
 </html>

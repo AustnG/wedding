@@ -14,7 +14,7 @@ body {
 }
 
 .bgimg {
-  background-image: url("/img/a1.jpg");
+  background-image: url("/img/01.jpg");
 }
 
 .footer {
@@ -119,10 +119,6 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-  body {
-    background-color: purple;
-  }
-
   #full {
     display: none;
   }
@@ -138,10 +134,6 @@ body {
 }
 
 @media screen and (max-width: 400px) {
-  body {
-    background-color: green;
-  }
-
   #full {
     display: inline-flex;
   }
