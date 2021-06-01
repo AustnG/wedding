@@ -4,23 +4,20 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
 }
 
 .bgimg {
-  min-height: 100%;
   background-position: center;
   background-size: cover;
-}
-
-.bgimg {
+  min-height: 100%;
   background-image: url("/img/01.jpg");
 }
 
 .footer {
+  background: #333;
+  color: white;
   padding: 20px;
   text-align: center;
-  background: #ddd;
 }
 
 .main {
@@ -114,8 +111,15 @@ body {
 }
 
 .rsvp {
-  border: 0px;
+  border: 2px solid #e7e7e7;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 4px;
+  color: white;
   padding: 10px 20px;
+}
+
+.rsvp:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (max-width: 700px) {
@@ -139,7 +143,7 @@ body {
   }
 
   #mini {
-    display: none !important;
+    display: none;
   }
 
   .overlay a {
