@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Info</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/gallery.css">
+
+<head>
+    <style>
+        .btn {
+            border: 2px solid #e7e7e7;
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 4px;
+            margin: 0px 8px;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: rgb(240, 240, 240);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <h1 class="logo w3-center"><b>ASHLEY & AUSTIN</b></h1>
+        </div>
+    </header>
+
+    <!-- Info -->
+    <div class="w3-row-padding w3-margin main">
+
+        <div class="w3-center" style="margin-top:100px">
+            <h1><b>Have photos to share?</b></h1>
+            <p>Feel free to add them to the public gallery below</p>
+            <br />
+            <a href="https://photos.app.goo.gl/UPx1TTy3E3wu9dc4A" class="btn" alt="Link to Gallery">Link to Gallery</a>
+            <br /><br /><br /><br /><br />
+        </div>
+
+        <!-- Gallery link -->
+        <div class="w3-center">
+            <div class="w3-container">
+                Scan or tap to see gallery:<br /><br />
+                <!-- <img src="./img/qr_greer_wedding.png" style="width:30%;"><br /><br /> -->
+                <a href="https://photos.app.goo.gl/UPx1TTy3E3wu9dc4A">
+                    <img src="./img/qr_tag_photos.png" style="width:30%;">
+                </a>
+                <br /><br />
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Photos -->
+    <div class="w3-container w3-padding-64">
+        <h1 class="w3-center w3-text-grey"><b>#GreerWedding</h1>
+
+        <!-- Gallery -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="./img/02a.png" style="width:100%;">
+                <div class="text">Engagement Photos</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="./img/03a.png" style="width:100%">
+                <div class="text">@La Gala</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="./img/04a.png" style="width:100%">
+                <div class="text">Redwoods, CA</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="./img/06a.png" style="width:100%">
+                <div class="text">DJing</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer w3-center w3-padding-16">
+        <div class="AaA">- A&A -</div>
+        <p>&copy; Austin Greer 2021</p>
+    </footer>
+
+</body>
+
+<script src="./js/scrolling.js"></script>
+<script src="./js/nav.js"></script>
+<script src="./js/gallery.js"></script>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("weddingParty");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</html>
