@@ -1,0 +1,202 @@
+/*  globals */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Monterrat, sans-serif;
+}
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 1;
+  background-color: darkslategray;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li a {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  border-radius: 4px;
+}
+
+.nav-menu li a:hover {
+  background-color: hsl(0, 0%, 100%, 90%);
+}
+
+/* nav menu button */
+.menu-btn {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu-btn__lines,
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+  width: 1.5rem;
+  height: 0.1rem;
+  background-color: hsl(0, 0%, 100%, 90%);
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+  content: "";
+  position: absolute;
+}
+.menu-btn__lines::before {
+  transform: translateY(-0.5rem);
+}
+.menu-btn__lines::after {
+  transform: translateY(0.5rem);
+}
+/* animation */
+.menu-btn.open .menu-btn__lines {
+  transform: translateX(2rem);
+  background-color: transparent;
+}
+.menu-btn.open .menu-btn__lines::before {
+  transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+  background-color: #ffffff;
+}
+.menu-btn.open .menu-btn__lines::after {
+  transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+  background-color: #ffffff;
+}
+
+/* sections */
+.section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* hero-section */
+.hero-section {
+  background-color: white;
+  background-image: url("/img/01.jpg");
+}
+
+.section h1 {
+  font-family: "Titillium Web", serif;
+  font-size: clamp(60px, 8vw, 200px);
+  font-weight: 700;
+  line-height: clamp(6vw, 8vw, 8vw);
+  color: white;
+  text-transform: uppercase;
+}
+
+.section h2 {
+  font-size: clamp(30px, 3vw, 80px);
+  color: grey;
+  text-transform: lowercase;
+}
+
+/* custom shape for hero section */
+/* https://www.shapedivider.app/ */
+
+/* info-section */
+.col {
+  padding: clamp(1rem, 8vw, 5rem);
+  max-width: 50%;
+}
+
+.info-section img {
+  width: 100%;
+}
+
+/* media query for tablet devices */
+@media (max-width: 1023px) {
+  .col {
+    background-color: hsl(0, 0%, 50%, 50%);
+    max-width: 100%;
+    width: clamp(300px, 7vw, 600px);
+    padding: 0;
+  }
+}
+
+/* header */
+.footer {
+  background-color: darkslategray;
+  color: white;
+  height: 10vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* media query for mobile devices */
+@media (max-width: 767px) {
+  .header a {
+    font-size: 1rem;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+  .nav-menu {
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateY(-100vh);
+    background-color: hsl(180, 25%, 25%, 90%);
+    transition: transform 0.3s ease-in-out;
+  }
+  .nav-menu.open {
+    transform: translateX(0);
+  }
+  .nav-menu li {
+    width: 100vw;
+    height: 100%;
+  }
+  .nav-menu li a {
+    color: #ffffff;
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .nav-menu li a:hover {
+    color: #111111;
+  }
+
+  .info-section {
+    flex-wrap: wrap;
+  }
+}
