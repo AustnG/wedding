@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Info</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="./css/main.css">
-<link rel="stylesheet" href="./css/gallery.css">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/nav.js" defer></script>
+    <title>Info & Contact</title>
+
     <style>
         .btn {
             border: 2px solid #e7e7e7;
@@ -17,10 +16,10 @@
             margin: 0px 8px;
             padding: 10px 15px;
         }
-
+        
         .btn:hover {}
-
         /* The Modal (background) */
+        
         .modal {
             display: none;
             /* Hidden by default */
@@ -43,8 +42,8 @@
             background-color: rgba(0, 0, 0, 0.4);
             /* Black w/ opacity */
         }
-
         /* Modal Content */
+        
         .modal-content {
             background-color: #fefefe;
             margin: auto;
@@ -52,15 +51,15 @@
             border: 1px solid #888;
             width: 80%;
         }
-
         /* The Close Button */
+        
         .close {
             color: #aaaaaa;
             float: right;
             font-size: 28px;
             font-weight: bold;
         }
-
+        
         .close:hover,
         .close:focus {
             color: #000;
@@ -72,251 +71,147 @@
 
 <body>
 
-    <header>
-        <div class="navbar">
-            <a href="#" class="logo">ASHLEY & AUSTIN</a>
-            <div class="right" id="full">
-                <a href="./home.html">Home</a>
-                <a href="" class="active">Info</a>
-                <a href="./rsvp.html">RSVP</a>
-                <a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank" alt="Registry">Registry</a>
-                <a href="./contact.html">FAQ & Contact</a>
-            </div>
-            <div id="mini">
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-            </div>
+    <!-- Navigation -->
+    <header class="header">
+        <a href="#">ASHLEY &amp; AUSTIN</a>
+        <div class="menu-btn">
+            <div class="menu-btn__lines"></div>
         </div>
+        <ul class="nav-menu">
+            <li><a href="./home.html" class="nav-item">Home</a></li>
+            <li><a href="#" alt="Info" class="nav-item active">Info & Contact</a></li>
+            <li><a href="./rsvp.html" alt="RSVP" class="nav-item">RSVP</a></li>
+            <li><a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank" alt="Registry" class="nav-item">Registry</a></li>
+            <li><a href="./contact.html" alt="FAQ Contact" class="nav-item">FAQ &amp; Contact</a></li>
+        </ul>
     </header>
 
-    <!-- Nav Modal -->
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="./home.html">Home</a>
-            <a href="./info.html">Info</a>
-            <a href="./rsvp.html">RSVP</a>
-            <a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank" alt="Registry">Registry</a>
-            <a href="./contact.html">FAQ & Contact</a>
-        </div>
-    </div>
-
-    <!-- Info -->
-    <div class="w3-row-padding w3-margin main">
-
-        <div class="w3-center" style="margin-top:77px">
-            <h1><b>Ceremony & Celebration</b></h1>
-        </div>
+    <!-- Content -->
+    <section class="section info-section" style="margin-top: 70px;">
 
         <!-- Wedding Day -->
-        <div class="w3-third w3-center">
-            <div class="w3-container">
-                <h3><b>Our wedding day</b></h3>
-                <img src="./img/info1.svg">
-                <p>Date<br />
+        <div class="col">
+            <h3><b>Our wedding day</b></h3>
+            <img src="./img/info1.svg">
+            <p>Date<br />
                 <p>
-                    Jan 22nd, 2022<br />
-                    Add to Calendar:
+                    Jan 22nd, 2022<br /> Add to Calendar:
                 </p>
                 <!-- Google Calendar -->
                 <button class="btn" onclick="window.open('https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220123T000000Z%2F20220123T040000Z&location=The%20Charleston%20923%20College%20St%2C%20Bowling%20Green%2C%20KY%2042101&text=Greer%20Wedding', '_blank')">
-                    <img src="img/gCal.png" style="height:20px; width:20px;">
-                </button>
+                <img src="img/gCal.png" style="height:20px; width:20px;">
+            </button>
 
                 <!-- iCalendar -->
                 <button class="btn">
-                    <img src="img/iCal.jpg" style="height:20px; width:20px;">
-                </button>
+                <img src="img/iCal.jpg" style="height:20px; width:20px;">
+            </button>
 
                 <!-- Outlook -->
                 <button class="btn" onclick="window.open('https://outlook.live.com/calendar/0/deeplink/compose?enddt=2022-01-23T04%3A00%3A00%2B00%3A00&location=The%20Charleston%20923%20College%20St%2C%20Bowling%20Green%2C%20KY%2042101&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2022-01-23T00%3A00%3A00%2B00%3A00&subject=Greer%20Wedding', '_blank')">
-                    <img src="img/oCal.png" style="height:20px; width:20px;">
-                </button>
-            </div>
+                <img src="img/oCal.png" style="height:20px; width:20px;">
+            </button>
+
         </div>
 
         <!-- Ceremony -->
-        <div class="w3-third w3-center">
-            <div class="w3-container">
-                <h3><b>Ceremony</b></h3>
-                <img src="./img/info2.svg">
-                <p>The Charleston</p>
-                <p>4:00 PM<br />*Intimate ceremony with family</p>
-                <button class="btn" id="weddingParty">Wedding Party</button>
-            </div>
+        <div class="col">
 
-            <!-- Modal -->
-            <div id="myModal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <!-- Wedding Party -->
-                    <div id="wedding-party">
-
-                        <h1 class="w3-center w3-text-grey"><b>Wedding Party</b></h1>
-                        <div class="w3-row">
-                            <div class="w3-half">
-                                <table>
-                                    <tr>
-                                        <td>Brittnye Denen</td>
-                                        <td>Maid/Matron of Honor</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Katelyn Waters</td>
-                                        <td>Bridesmaid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Alvin Cain</td>
-                                        <td>Bridesmaid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Anna Marsili</td>
-                                        <td>Bridesmaid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Camilla Wilson</td>
-                                        <td>Bridesmaid</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Catherine Stephenson</td>
-                                        <td>Bridesmaid</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="w3-half">
-                                <table>
-                                    <tr>
-                                        <td>Zach Greer</td>
-                                        <td>Best Man</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Casey Greer</td>
-                                        <td>Groomswoman</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Duncan McKenzie</td>
-                                        <td>Groomsman</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jordan Speer</td>
-                                        <td>Groomsman</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Max Schott</td>
-                                        <td>Groomsman</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Michael Stephenson</td>
-                                        <td>Groomsman</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            <h3><b>Ceremony</b></h3>
+            <img src="./img/info2.svg">
+            <p>The Charleston</p>
+            <p>4:00 PM<br />*Intimate ceremony with family</p>
+            <button class="btn" id="weddingParty">Wedding Party</button>
 
         </div>
-
-        <!-- Reception -->
-        <div class="w3-third w3-center">
-            <div class="w3-container">
-                <h3><b>Reception</b></h3>
-                <img src="./img/info3.svg">
-                <p>The Charleston</p>
-                <p>6:00 PM<br />923 College St - Bowling Green, KY</p>
-                <button class="btn" onclick="window.open('https://www.google.com/maps/place/The+Charleston/@36.9936891,-86.4446979,17z/data=!3m2!4b1!5s0x8865ef36eb44da59:0x1a716aea99f20d6f!4m5!3m4!1s0x8865ef369310de93:0xa92852996e4b7a6f!8m2!3d36.9936848!4d-86.4425092', '_blank')">
-                    Directions
-                </button>
-
-
-            </div>
+        <div class="col">
+            <h3><b>Reception</b></h3>
+            <img src="./img/info3.svg">
+            <p>The Charleston</p>
+            <p>6:00 PM<br />923 College St - Bowling Green, KY</p>
+            <button class="btn" onclick="window.open('https://www.google.com/maps/place/The+Charleston/@36.9936891,-86.4446979,17z/data=!3m2!4b1!5s0x8865ef36eb44da59:0x1a716aea99f20d6f!4m5!3m4!1s0x8865ef369310de93:0xa92852996e4b7a6f!8m2!3d36.9936848!4d-86.4425092', '_blank')">
+                Directions
+            </button>
         </div>
-    </div>
-
-    <!-- Photos -->
-    <div class="w3-container w3-padding-64">
-        <h1 class="w3-center w3-text-grey"><b>#GreerWedding</h1>
-
-        <!-- Gallery 1 -->
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 4</div>
-                <img src="./img/02a.png" style="width:100%;">
-                <div class="text">Engagement Photos</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 4</div>
-                <img src="./img/03a.png" style="width:100%">
-                <div class="text">@La Gala</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 4</div>
-                <img src="./img/04a.png" style="width:100%">
-                <div class="text">Redwoods</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 4</div>
-                <img src="./img/06a.png" style="width:100%">
-                <div class="text">DJing</div>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        </div>
-        <br>
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
-
-    </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer w3-center w3-padding-16">
-        <div class="AaA">- A&A -</div>
-        <p>&copy; Austin Greer 2021</p>
+    <footer class="footer">
+        <p>- A&A -<br /><br />&copy; Austin Greer 2021</p>
     </footer>
 
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Wedding Party -->
+            <div id="wedding-party">
+
+                <h1 class="w3-center w3-text-grey"><b>Wedding Party</b></h1>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <table>
+                            <tr>
+                                <td>Brittnye Denen</td>
+                                <td>Maid/Matron of Honor</td>
+                            </tr>
+                            <tr>
+                                <td>Katelyn Waters</td>
+                                <td>Bridesmaid</td>
+                            </tr>
+                            <tr>
+                                <td>Alvin Cain</td>
+                                <td>Bridesmaid</td>
+                            </tr>
+                            <tr>
+                                <td>Anna Marsili</td>
+                                <td>Bridesmaid</td>
+                            </tr>
+                            <tr>
+                                <td>Camilla Wilson</td>
+                                <td>Bridesmaid</td>
+                            </tr>
+                            <tr>
+                                <td>Catherine Stephenson</td>
+                                <td>Bridesmaid</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="w3-half">
+                        <table>
+                            <tr>
+                                <td>Zach Greer</td>
+                                <td>Best Man</td>
+                            </tr>
+                            <tr>
+                                <td>Casey Greer</td>
+                                <td>Groomswoman</td>
+                            </tr>
+                            <tr>
+                                <td>Duncan McKenzie</td>
+                                <td>Groomsman</td>
+                            </tr>
+                            <tr>
+                                <td>Jordan Speer</td>
+                                <td>Groomsman</td>
+                            </tr>
+                            <tr>
+                                <td>Max Schott</td>
+                                <td>Groomsman</td>
+                            </tr>
+                            <tr>
+                                <td>Michael Stephenson</td>
+                                <td>Groomsman</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </body>
-
-<script src="./js/scrolling.js"></script>
-<script src="./js/nav.js"></script>
-<script src="./js/gallery.js"></script>
-
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("weddingParty");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function () {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
 
 </html>

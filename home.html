@@ -4,90 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
-
+    <link rel="stylesheet" href="./css/gallery.css">
+    <script src="./js/nav.js" defer></script>
     <title>Greer Wedding</title>
-
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <a href="#" class="logo">ASHLEY & AUSTIN</a>
-            <div class="right" id="full">
-                <a href="" class="active">Home</a>
-                <a href="./info.html">Info</a>
-                <a href="./rsvp.html">RSVP</a>
-                <a href=" alt="Registry">Registry</a>
-                <a href="./contact.html">FAQ & Contact</a>
-            </div>
-            <div id="mini">
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-            </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <a href="#">ASHLEY &amp; AUSTIN</a>
+        <div class="menu-btn">
+            <div class="menu-btn__lines"></div>
         </div>
+        <ul class="nav-menu">
+            <li><a href="#" class="nav-item active">Home</a></li>
+            <li><a href="./info.html" alt="Info" class="nav-item">Info & Contact</a></li>
+            <li><a href="./rsvp.html" alt="RSVP" class="nav-item">RSVP</a></li>
+            <li><a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank" alt="Registry" class="nav-item">Registry</a></li>
+            <li><a href="./contact.html" alt="FAQ Contact" class="nav-item">FAQ &amp; Contact</a></li>
+        </ul>
     </header>
 
-    <!-- Nav Modal -->
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="./home.html">Home</a>
-            <a href="./info.html">Info</a>
-            <a href="./rsvp.html">RSVP</a>
-            <a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank" alt="Registry">Registry</a>
-            <a href="./contact.html">FAQ & Contact</a>
-        </div>
-    </div>
-
     <!-- Hero -->
-    <div class="w3-wide bgimg w3-grayscale-max main" style="height: 800px;">
-        <div class="w3-display-middle w3-text-white w3-center">
-            <!--
-            <div class="content" style="height: auto; width:100%; overflow: hidden; position: center;">
-                <img src="../img/01.jpg" style="width:100%;">
-            </div>
-            -->
-            <h1 class="w3-jumbo">ASHLEY & AUSTIN</h1>
-            <br />
-            <h2>are getting married</h2>
-            <br />
-            <h2>Jan 22, 2022 | 6:00 PM</h2>
-            <br />
-            <br />
-            <br />
+    <section class="section hero-section">
+        <div class="col">
+            <h1>Ashley &amp; Austin</h1>
+            <h2>Are getting married!</h2>
+            <p>Jan 22, 2022 | 6:00 PM</p>
             <button class="rsvp" onclick="window.open('./rsvp.html', '_self')">RSVP</button>
-            </a>
         </div>
-    </div>
+    </section>
 
-    <!-- About -->
-    <div class="w3-row-padding w3-margin">
-        <div class="w3-half">
-            <div class="w3-container" style="min-height:300px; padding: 0px 10%;">
-                <p>For those who didn't know</p>
-                <h3><b>Our Story</b></h3>
-                <p>Began dating around 2015. Ashley and Austin first met at a birthday party for their mutual friend Duncan McKenzie.</>
+    <section class="section info-section">
+        <!-- About Us -->
+        <div class="col">
+            <p>For those who didn't know</p>
+            <h3><b>Our Story</b></h3>
+            <p>Began dating around 2015. Ashley and Austin first met at a birthday party for their mutual friend Duncan McKenzie.
+            </p>
+        </div>
+        <!-- Photo Slideshow -->
+        <div class="col">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="./img/05a.png" style="width:100%;">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="./img/02a.png" style="width:100%;">
+                    <div class="text">Engagement Photos</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="./img/03a.png" style="width:100%">
+                    <div class="text">@La Gala</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="./img/04a.png" style="width:100%">
+                    <div class="text">Redwoods</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="./img/06a.png" style="width:100%">
+                    <div class="text">DJing</div>
+                </div>
+                <h3 style="text-align: right;"><b>#GreerWedding</b></h3>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </div>
-
-        <div class="w3-half w3-center">
-            <div class="w3-container w3-center" style="min-height:300px">
-                <img src="./img/05.jpg" style="width: 100%;">
-            </div>
-        </div>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer w3-center w3-padding-16">
-        <div class="AaA">- A&A -</div>
-        <p>&copy; Austin Greer 2021</p>
+    <footer class="footer">
+        <p>- A&A -<br /><br />&copy; Austin Greer 2021</p>
     </footer>
 
-</body>
+    <script src="./js/gallery.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
 
-<script src="./js/scrolling.js"></script>
-<script src="./js/nav.js"></script>
+        // Get the button that opens the modal
+        var btn = document.getElementById("weddingParty");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
 
 </html>
