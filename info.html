@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/nav.js" defer></script>
-    <title>Info & Contact</title>
+    <title>Info &amp; Contact</title>
 
     <style>
         .btn {
@@ -17,7 +17,9 @@
             padding: 10px 15px;
         }
         
-        .btn:hover {}
+        .btn:hover {
+            background-color: rgba(255, 255, 255, 0);
+        }
         /* The Modal (background) */
         
         .modal {
@@ -78,66 +80,68 @@
             <div class="menu-btn__lines"></div>
         </div>
         <ul class="nav-menu">
-            <li><a href="./home.html" class="nav-item">Home</a></li>
-            <li><a href="#" alt="Info" class="nav-item active">Info & Contact</a></li>
+            <li><a href="./home.html" class="nav-item active">Home</a></li>
+            <li><a href="#" alt="Info and Contact" class="nav-item">Info &amp; Contact</a></li>
             <li><a href="./rsvp.html" alt="RSVP" class="nav-item">RSVP</a></li>
             <li><a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank" alt="Registry" class="nav-item">Registry</a></li>
-            <li><a href="./contact.html" alt="FAQ Contact" class="nav-item">FAQ &amp; Contact</a></li>
         </ul>
     </header>
 
     <!-- Content -->
-    <section class="section info-section" style="margin-top: 70px;">
-
+    <section class="section info-section" style="margin-top: 70px">
         <!-- Wedding Day -->
         <div class="col">
             <h3><b>Our wedding day</b></h3>
-            <img src="./img/info1.svg">
-            <p>Date<br />
-                <p>
-                    Jan 22nd, 2022<br /> Add to Calendar:
-                </p>
-                <!-- Google Calendar -->
-                <button class="btn" onclick="window.open('https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220123T000000Z%2F20220123T040000Z&location=The%20Charleston%20923%20College%20St%2C%20Bowling%20Green%2C%20KY%2042101&text=Greer%20Wedding', '_blank')">
-                <img src="img/gCal.png" style="height:20px; width:20px;">
-            </button>
+            <img src="./img/info1.svg" style="width:80px;" />
+            <p>Date<br /></p>
+            <p>
+                Jan 22nd, 2022<br /> Add to Calendar:
+            </p>
+            <!-- Google Calendar -->
+            <button class="btn" onclick="window.open('https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220123T000000Z%2F20220123T040000Z&location=The%20Charleston%20923%20College%20St%2C%20Bowling%20Green%2C%20KY%2042101&text=Greer%20Wedding', '_blank')">
+          <img src="img/gCal.png" style="height: 20px; width: 20px" />
+        </button>
 
-                <!-- iCalendar -->
-                <button class="btn">
-                <img src="img/iCal.jpg" style="height:20px; width:20px;">
-            </button>
+            <!-- iCalendar -->
+            <button class="btn">
+          <img src="img/iCal.jpg" style="height: 20px; width: 20px" />
+        </button>
 
-                <!-- Outlook -->
-                <button class="btn" onclick="window.open('https://outlook.live.com/calendar/0/deeplink/compose?enddt=2022-01-23T04%3A00%3A00%2B00%3A00&location=The%20Charleston%20923%20College%20St%2C%20Bowling%20Green%2C%20KY%2042101&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2022-01-23T00%3A00%3A00%2B00%3A00&subject=Greer%20Wedding', '_blank')">
-                <img src="img/oCal.png" style="height:20px; width:20px;">
-            </button>
-
+            <!-- Outlook -->
+            <button class="btn" onclick="window.open('https://outlook.live.com/calendar/0/deeplink/compose?enddt=2022-01-23T04%3A00%3A00%2B00%3A00&location=The%20Charleston%20923%20College%20St%2C%20Bowling%20Green%2C%20KY%2042101&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2022-01-23T00%3A00%3A00%2B00%3A00&subject=Greer%20Wedding', '_blank')">
+          <img src="img/oCal.png" style="height: 20px; width: 20px" />
+        </button>
         </div>
 
         <!-- Ceremony -->
         <div class="col">
-
             <h3><b>Ceremony</b></h3>
-            <img src="./img/info2.svg">
+            <img src="./img/info2.svg" style="width:80px;" />
             <p>The Charleston</p>
             <p>4:00 PM<br />*Intimate ceremony with family</p>
             <button class="btn" id="weddingParty">Wedding Party</button>
-
         </div>
         <div class="col">
             <h3><b>Reception</b></h3>
-            <img src="./img/info3.svg">
+            <img src="./img/info3.svg" style="width:80px;" />
             <p>The Charleston</p>
             <p>6:00 PM<br />923 College St - Bowling Green, KY</p>
             <button class="btn" onclick="window.open('https://www.google.com/maps/place/The+Charleston/@36.9936891,-86.4446979,17z/data=!3m2!4b1!5s0x8865ef36eb44da59:0x1a716aea99f20d6f!4m5!3m4!1s0x8865ef369310de93:0xa92852996e4b7a6f!8m2!3d36.9936848!4d-86.4425092', '_blank')">
-                Directions
-            </button>
+          Directions
+        </button>
+        </div>
+    </section>
+
+    <section class="section info-section">
+        <!-- About -->
+        <div class="w3-center"></div>
+        Any questions?<br /> Covid <br /> Can I bring a date<br /> kids? welcome<br /> attire <br /> When whould i arrive? 5:30p<br /> Where to park<br /> Places to stay<br /> contact us
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>- A&A -<br /><br />&copy; Austin Greer 2021</p>
+        <p>- A&amp;A -<br /><br />&copy; Austin Greer 2021</p>
     </footer>
 
     <!-- Modal -->
@@ -147,7 +151,6 @@
             <span class="close">&times;</span>
             <!-- Wedding Party -->
             <div id="wedding-party">
-
                 <h1 class="w3-center w3-text-grey"><b>Wedding Party</b></h1>
                 <div class="w3-row">
                     <div class="w3-half">
@@ -207,11 +210,9 @@
                         </table>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-
 </body>
 
 </html>

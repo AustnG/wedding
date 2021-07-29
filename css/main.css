@@ -120,6 +120,7 @@ body {
 .hero-section {
     background-color: hsl(0, 0%, 100%, 35%);
     background-image: url("/img/01.jpg");
+    filter: grayscale(0%);
     background-position: 50% 40%;
     background-size: cover;
     height: 100vh;
@@ -128,6 +129,7 @@ body {
 .section h1 {
     font-family: "Titillium Web", serif;
     font-size: clamp(60px, 8vw, 200px);
+    line-height: 0.8;
     font-weight: 700;
     color: white;
     text-transform: uppercase;
@@ -136,7 +138,6 @@ body {
 .section h2 {
     font-size: clamp(30px, 3vw, 80px);
     color: grey;
-    text-transform: lowercase;
 }
 
 .rsvp {

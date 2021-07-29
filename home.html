@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/gallery.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
     <script src="./js/nav.js" defer></script>
     <title>Greer Wedding</title>
 </head>
@@ -20,10 +20,9 @@
         </div>
         <ul class="nav-menu">
             <li><a href="#" class="nav-item active">Home</a></li>
-            <li><a href="./info.html" alt="Info" class="nav-item">Info & Contact</a></li>
+            <li><a href="./info.html" alt="Info and Contact" class="nav-item">Info &amp; Contact</a></li>
             <li><a href="./rsvp.html" alt="RSVP" class="nav-item">RSVP</a></li>
             <li><a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank" alt="Registry" class="nav-item">Registry</a></li>
-            <li><a href="./contact.html" alt="FAQ Contact" class="nav-item">FAQ &amp; Contact</a></li>
         </ul>
     </header>
 
@@ -31,9 +30,12 @@
     <section class="section hero-section">
         <div class="col">
             <h1>Ashley &amp; Austin</h1>
-            <h2>Are getting married!</h2>
-            <p>Jan 22, 2022 | 6:00 PM</p>
-            <button class="rsvp" onclick="window.open('./rsvp.html', '_self')">RSVP</button>
+            <h2>are getting married!</h2>
+            <h2>Jan 22, 2022 | 6:00 PM</h2>
+
+            <div style="margin:0px auto;">
+                <button class="rsvp" onclick="window.open('./rsvp.html', '_self')">RSVP</button>
+            </div>
         </div>
     </section>
 
@@ -42,7 +44,8 @@
         <div class="col">
             <p>For those who didn't know</p>
             <h3><b>Our Story</b></h3>
-            <p>Began dating around 2015. Ashley and Austin first met at a birthday party for their mutual friend Duncan McKenzie.
+            <p>
+                Began dating around 2015. Ashley and Austin first met at a birthday party for their mutual friend Duncan McKenzie.
             </p>
         </div>
         <!-- Photo Slideshow -->
@@ -50,34 +53,34 @@
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 5</div>
-                    <img src="./img/05a.png" style="width:100%;">
+                    <img src="./img/05a.png" style="width: 100%" />
                     <div class="text"></div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 5</div>
-                    <img src="./img/02a.png" style="width:100%;">
+                    <img src="./img/02a.png" style="width: 100%" />
                     <div class="text">Engagement Photos</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 5</div>
-                    <img src="./img/03a.png" style="width:100%">
+                    <img src="./img/03a.png" style="width: 100%" />
                     <div class="text">@La Gala</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">4 / 5</div>
-                    <img src="./img/04a.png" style="width:100%">
+                    <img src="./img/04a.png" style="width: 100%" />
                     <div class="text">Redwoods</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">5 / 5</div>
-                    <img src="./img/06a.png" style="width:100%">
+                    <img src="./img/06a.png" style="width: 100%" />
                     <div class="text">DJing</div>
                 </div>
-                <h3 style="text-align: right;"><b>#GreerWedding</b></h3>
+                <h3 style="text-align: right"><b>#GreerWedding</b></h3>
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -87,7 +90,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>- A&A -<br /><br />&copy; Austin Greer 2021</p>
+        <p>- A&amp;A -<br /><br />&copy; Austin Greer 2021</p>
     </footer>
 
     <script src="./js/gallery.js"></script>
@@ -101,24 +104,23 @@
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
-        // When the user clicks the button, open the modal 
+        // When the user clicks the button, open the modal
         btn.onclick = function() {
             modal.style.display = "block";
-        }
+        };
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
             modal.style.display = "none";
-        }
+        };
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
-        }
+        };
     </script>
-
 </body>
 
 </html>
