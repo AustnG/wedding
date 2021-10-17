@@ -74,7 +74,8 @@
             <li><a href="#" class="nav-item active">Home</a></li>
             <li><a href="#info" alt="Info and Contact" class="nav-item">Info &amp; Contact</a></li>
             <li><a href="./rsvp.html" alt="RSVP" class="nav-item">RSVP</a></li>
-            <li><a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank" alt="Registry" class="nav-item">Registry</a></li>
+            <!-- <li><a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank" alt="Registry" class="nav-item">Registry</a></li> -->
+            <li><a href="#registry" alt="Registry" class="nav-item">Registry</a></li>
         </ul>
     </header>
 
@@ -82,15 +83,17 @@
     <section class="section hero-section">
         <div class="col" style="margin-top:5em; text-align:center;">
             <h1>Ashley &amp; Austin</h1>
+            <br>
             <h2>are getting married!</h2>
-            <h2>Jan 22, 2022 | 6:00 PM</h2>
+            <h2>Jan 22, 2022</h2>
 
             <div style="margin:20px auto;">
-                <button class="btn" style="color:white;" onclick="window.open('./rsvp.html', '_self')">RSVP</button>
+                <button class="heroBtn" style="color:white;" onclick="window.open('./rsvp.html', '_self')">RSVP</button>
             </div>
         </div>
     </section>
 
+    <!-- Us & Gallery -->
     <section class="section info-section">
         <!-- About Us -->
         <div class="col sectionPadding">
@@ -139,7 +142,7 @@
                     <div class="text">DJing</div>
                 </div>
                 <br />
-                <h3 style="text-align: right; color: darkslategray;"><b>#GreerWedding</b></h3>
+                <h3 id="info" style="text-align: right; color: darkslategray;"><b>#GreerWedding</b></h3>
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -149,12 +152,14 @@
 
     <hr>
 
-    <section id="info" class="section info-section">
+    <!-- Info -->
+    <section class="section info-section">
         <!-- Wedding -->
         <div class="col sectionPadding" style="text-align:center;">
-            <h3><b>Wedding</b></h3>
+            <h3>Wedding</h3>
             <br>
-            <img src="./img/info1.svg" style="width:80px;" />
+            <!-- <img src="./img/info1.svg" style="width:80px;" /> -->
+            <img class="filter-blue" src="./img/event_black_48dp.svg" style="width:80px;" />
             <br>
             <br>
             <p>Date<br /></p>
@@ -180,9 +185,10 @@
 
         <!-- Ceremony -->
         <div class="col sectionPadding" style="text-align:center;">
-            <h3><b>Ceremony</b></h3>
+            <h3>Ceremony</h3>
             <br>
-            <img src="./img/info2.svg" style="width:80px;" />
+            <!-- <img src="./img/info2.svg" style="width:80px;" /> -->
+            <img class="filter-green" src="./img/church_black_48dp.svg" style="width:80px;" />
             <br>
             <br>
             <p>The Charleston</p>
@@ -193,9 +199,10 @@
 
         <!-- Reception -->
         <div class="col sectionPadding" style="text-align:center;">
-            <h3><b>Reception</b></h3>
+            <h3>Reception</h3>
             <br>
-            <img src="./img/info3.svg" style="width:80px;" />
+            <!-- <img src="./img/info3.svg" style="width:80px;" /> -->
+            <img class="filter-plum" src="./img/celebration_black_48dp.svg" style="width:80px;" />
             <br>
             <br>
             <p>The Charleston</p>
@@ -209,10 +216,57 @@
 
     <hr>
 
+    <!-- Hotel Block -->
+    <section class="section info-section">
+        <div class="col sectionPadding" style="text-align: center;">
+            <p>
+                Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br>
+            </p>
+        </div>
+
+        <div class="col sectionPadding" style="text-align: center;">
+            <p>
+                Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br>
+            </p>
+        </div>
+
+        <div class="col sectionPadding" style="text-align: center;">
+            <p>
+                Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br>
+            </p>
+        </div>
+    </section>
+
+    <hr id="registry">
+
+    <!-- Registry -->
+    <section class="section info-section">
+        <!-- Amazon.com -->
+        <div class="col sectionPadding" style="text-align:center;">
+            <img src="./img/regAmazon.png" style="width:300px;" />
+            <br>
+            <button class="btn" onclick="window.open('https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ', '_blank')">
+                See Registry
+            </button>
+        </div>
+
+        <!-- Target.com -->
+        <div class="col sectionPadding" style="text-align:center;">
+            <img src="./img/regTarget.png" style="width:400px;" />
+            <br>
+            <button class="btn" onclick="window.open('https://www.target.com', '_blank')">
+                See Registry
+            </button>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- FAQ -->
     <section class="section info-section">
 
         <!-- About Us -->
-        <div class="col sectionPadding">
+        <div class="col sectionPadding" style="text-align: center;">
             <p>Covid protocol?</p>
             <p>Can I bring a date? Nah</p>
             <p>Kids? Welcome</p>
