@@ -9,6 +9,57 @@
     <link rel="stylesheet" href="./css/gallery.css" />
     <script src="./js/nav.js" defer></script>
     <title>Greer Wedding</title>
+
+    <style>
+        /* The Modal (background) */
+        
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+        /* Modal Content */
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        /* The Close Button */
+        
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,7 +72,7 @@
         </div>
         <ul class="nav-menu">
             <li><a href="#" class="nav-item active">Home</a></li>
-            <li><a href="./info.html" alt="Info and Contact" class="nav-item">Info &amp; Contact</a></li>
+            <li><a href="#info" alt="Info and Contact" class="nav-item">Info &amp; Contact</a></li>
             <li><a href="./rsvp.html" alt="RSVP" class="nav-item">RSVP</a></li>
             <li><a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank" alt="Registry" class="nav-item">Registry</a></li>
         </ul>
@@ -29,13 +80,13 @@
 
     <!-- Hero -->
     <section class="section hero-section">
-        <div class="col" style="margin-top:5em;">
+        <div class="col" style="margin-top:5em; text-align:center;">
             <h1>Ashley &amp; Austin</h1>
             <h2>are getting married!</h2>
             <h2>Jan 22, 2022 | 6:00 PM</h2>
 
             <div style="margin:20px auto;">
-                <button class="rsvp" onclick="window.open('./rsvp.html', '_self')">RSVP</button>
+                <button class="btn" style="color:white;" onclick="window.open('./rsvp.html', '_self')">RSVP</button>
             </div>
         </div>
     </section>
@@ -44,15 +95,17 @@
         <!-- About Us -->
         <div class="col sectionPadding">
             <p><i>For those who didn't know</i></p>
-            <h2 style="padding:5px 0px;"><b>Our Story</b></h2>
+            <h2 style="padding:5px 0px; color:darkslategray; text-decoration: underline;"><b>Our Story</b></h2>
+            <br>
             <p>
                 Ashley and Austin began dating around 2015. They first met at a birthday party for their mutual friend Duncan McKenzie.<br />
-                <br />He was throwing a fat rager when they were introduced to each other. Over the coming weeks, they ran into rach oher thru social events. On Halloween in 2015 - at a Pizza Riot show @Rocky's Bar in Bowling Green, KY - Ashley asked
-                Austin for his number. They began dating shortly after.<br />
-                <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident odit harum perspiciatis modi rem nulla minima dignissimos sit! Deleniti temporibus eius repellendus laboriosam necessitatibus quia possimus iusto. Earum quaerat
-                nostrum porro, eligendi sequi perferendis dicta illo natus officia autem, sint tempora magni! Temporibus accusantium id sint illum sapiente! Nobis, perspiciatis.
+                <br />Thru the following months they kept in touch and continued to see each other around other social events in Bowling Green, KY. On New Years Eve of 2015 - at a Pizza Riot show @Rocky's Bar - Ashley asked Austin for his number. They
+                began dating shortly after.<br />
+                <br />During their time dating they've enjoyed various hobbies together such as cooking, traveling, attending concerts, and even DJing! It's common place to see the two taking the stage together to DJ for evenings of sick ass tunes that
+                really make the 21 year olds wish there was a younger DJ.
             </p>
         </div>
+
         <!-- Photo Slideshow -->
         <div class="col sectionPadding">
             <div class="slideshow-container">
@@ -86,7 +139,7 @@
                     <div class="text">DJing</div>
                 </div>
                 <br />
-                <h3 style="text-align: right"><b>#GreerWedding</b></h3>
+                <h3 style="text-align: right; color: darkslategray;"><b>#GreerWedding</b></h3>
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -94,10 +147,151 @@
         </div>
     </section>
 
+    <hr>
+
+    <section id="info" class="section info-section">
+        <!-- Wedding -->
+        <div class="col sectionPadding" style="text-align:center;">
+            <h3><b>Wedding</b></h3>
+            <br>
+            <img src="./img/info1.svg" style="width:80px;" />
+            <br>
+            <br>
+            <p>Date<br /></p>
+            <p>
+                Jan 22nd, 2022<br /> Add to Calendar:
+            </p>
+            <br>
+            <!-- Google Calendar -->
+            <button class="btn" onclick="window.open('https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220123T000000Z%2F20220123T040000Z&location=The%20Charleston%20923%20College%20St%2C%20Bowling%20Green%2C%20KY%2042101&text=Greer%20Wedding', '_blank')">
+                <img src="img/gCal.png" style="height: 20px; width: 20px;" />
+            </button>
+
+            <!-- iCalendar -->
+            <button class="btn">
+                <img src="img/iCal.jpg" style="height: 20px; width: 20px;" />
+            </button>
+
+            <!-- Outlook -->
+            <button class="btn" onclick="window.open('https://outlook.live.com/calendar/0/deeplink/compose?enddt=2022-01-23T04%3A00%3A00%2B00%3A00&location=The%20Charleston%20923%20College%20St%2C%20Bowling%20Green%2C%20KY%2042101&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2022-01-23T00%3A00%3A00%2B00%3A00&subject=Greer%20Wedding', '_blank')">
+                <img src="img/oCal.jpg" style="height: 20px; width: 20px;" />
+            </button>
+        </div>
+
+        <!-- Ceremony -->
+        <div class="col sectionPadding" style="text-align:center;">
+            <h3><b>Ceremony</b></h3>
+            <br>
+            <img src="./img/info2.svg" style="width:80px;" />
+            <br>
+            <br>
+            <p>The Charleston</p>
+            <p>4:00 PM<br />*Intimate ceremony with family</p>
+            <br>
+            <button class="btn" id="weddingParty">Wedding Party</button>
+        </div>
+
+        <!-- Reception -->
+        <div class="col sectionPadding" style="text-align:center;">
+            <h3><b>Reception</b></h3>
+            <br>
+            <img src="./img/info3.svg" style="width:80px;" />
+            <br>
+            <br>
+            <p>The Charleston</p>
+            <p>6:00 PM<br />923 College St - Bowling Green, KY</p>
+            <br>
+            <button class="btn" onclick="window.open('https://www.google.com/maps/place/The+Charleston/@36.9936891,-86.4446979,17z/data=!3m2!4b1!5s0x8865ef36eb44da59:0x1a716aea99f20d6f!4m5!3m4!1s0x8865ef369310de93:0xa92852996e4b7a6f!8m2!3d36.9936848!4d-86.4425092', '_blank')">
+                Directions
+            </button>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="section info-section">
+
+        <!-- About Us -->
+        <div class="col sectionPadding">
+            <p>Covid protocol?</p>
+            <p>Can I bring a date? Nah</p>
+            <p>Kids? Welcome</p>
+            <p>When whould I arrive? 5:30p</p>
+            <p>Where to park?</p>
+            <p>Places to stay?</p>
+            <p>Any questions? Contacts us at:
+                <a href="mailto:austin.greer6@gmail.com">austin.greer6@gmail.com
+                </a>
+            </p>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <p>- A&amp;A -<br /><br />&copy; Austin Greer 2021</p>
     </footer>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Wedding Party -->
+            <div id="wedding-party">
+                <h1 class="w3-center w3-text-grey"><b>Wedding Party</b></h1>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <table>
+                            <tr>
+                                <td>Brittnye Denen</td>
+                                <td>Maid/Matron of Honor</td>
+                            </tr>
+                            <tr>
+                                <td>Katelyn Waters</td>
+                                <td>Bridesmaid</td>
+                            </tr>
+                            <tr>
+                                <td>Alvin Cain</td>
+                                <td>Bridesmaid</td>
+                            </tr>
+                            <tr>
+                                <td>Camilla Wilson</td>
+                                <td>Bridesmaid</td>
+                            </tr>
+                            <!-- <tr>
+                                <td>Anna Marsili</td>
+                                <td>Bridesmaid</td>
+                            </tr> -->
+                        </table>
+                    </div>
+                    <div class="w3-half">
+                        <table>
+                            <!-- <tr>
+                                <td>Zach Greer</td>
+                                <td>Best Man</td>
+                            </tr> -->
+                            <tr>
+                                <td>Duncan McKenzie</td>
+                                <td>Groomsman</td>
+                            </tr>
+                            <tr>
+                                <td>Jordan Speer</td>
+                                <td>Groomsman</td>
+                            </tr>
+                            <tr>
+                                <td>Max Schott</td>
+                                <td>Groomsman</td>
+                            </tr>
+                            <tr>
+                                <td>Casey Greer</td>
+                                <td>Groomswoman</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="./js/gallery.js"></script>
     <script>

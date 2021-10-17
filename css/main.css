@@ -11,6 +11,11 @@ body {
     font-family: Monterrat, sans-serif;
 }
 
+hr {
+    border-top: darkslategray;
+    margin: 0px 20px;
+}
+
 
 /* header */
 
@@ -121,9 +126,9 @@ body {
     background-color: hsl(0, 0%, 100%, 35%);
     background-image: url("/img/01.jpg");
     filter: grayscale(0%);
-    background-position: 50% 40%;
+    background-position: 50% 26%;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
 }
 
 .section h1 {
@@ -137,18 +142,17 @@ body {
 
 .section h2 {
     font-size: clamp(30px, 3vw, 80px);
-    color: grey;
+    color: white;
 }
 
-.rsvp {
+.btn {
     border: 2px solid #e7e7e7;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 4px;
-    color: white;
     padding: 10px 20px;
 }
 
-.rsvp:hover {
+.btn:hover {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
