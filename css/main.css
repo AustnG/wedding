@@ -7,13 +7,17 @@
     padding: 0;
 }
 
+.anchor {
+    padding-top: 67px;
+    margin-top: -67px;
+}
+
 body {
     font-family: Monterrat, sans-serif;
 }
 
 hr {
     border-top: darkslategray;
-    margin: 0px 20px;
 }
 
 
@@ -133,7 +137,7 @@ hr {
 
 .section h1 {
     font-family: "Titillium Web", serif;
-    font-size: clamp(40px, 8vw, 100px);
+    font-size: clamp(55px, 8vw, 100px);
     line-height: 0.8;
     font-weight: 700;
     color: white;
@@ -141,7 +145,7 @@ hr {
 }
 
 .section h2 {
-    font-size: clamp(20px, 3vw, 70px);
+    font-size: clamp(30px, 3vw, 70px);
     color: white;
 }
 
@@ -183,6 +187,13 @@ hr {
 
 /* info-section */
 
+.card {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 4px;
+    text-align: center;
+}
+
 .col {
     padding: 10px;
 }
@@ -207,10 +218,18 @@ hr {
     width: 100%;
 }
 
+.vd {
+    background: linear-gradient(to right, transparent calc(50% + 1px), #fff calc(50% + 1px)), linear-gradient(to right, #fff calc(50% - 1px), lightgrey calc(50% - 1px));
+}
+
 
 /* media query for tablet devices */
 
-@media (max-width: 1023px) {}
+@media (max-width: 768px) {
+    .vd {
+        display: contents;
+    }
+}
 
 .sectionPadding {
     margin: 20px 10px;
@@ -274,5 +293,8 @@ hr {
     .sectionPadding {
         margin: 20px 10px;
         width: 100%;
+    }
+    .vd {
+        display: none;
     }
 }

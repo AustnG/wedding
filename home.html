@@ -62,6 +62,17 @@
     </style>
 </head>
 
+
+<!--
+    Left to do:
+    - Widths on Registry images need to match // resize images to work better
+    - About Us
+    - more pics (replace placeholder icons in wedding section)
+    - Add to Apple Calendar button
+    - FAQ section
+    - Add Hotels to stay in section // images // directions
+-->
+
 <body>
 
     <!-- Navigation -->
@@ -74,7 +85,6 @@
             <li><a href="#" class="nav-item active">Home</a></li>
             <li><a href="#info" alt="Info and Contact" class="nav-item">Info &amp; Contact</a></li>
             <li><a href="./rsvp.html" alt="RSVP" class="nav-item">RSVP</a></li>
-            <!-- <li><a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank" alt="Registry" class="nav-item">Registry</a></li> -->
             <li><a href="#registry" alt="Registry" class="nav-item">Registry</a></li>
         </ul>
     </header>
@@ -100,7 +110,7 @@
             <p><i>For those who didn't know</i></p>
             <h2 style="padding:5px 0px; color:darkslategray; text-decoration: underline;"><b>Our Story</b></h2>
             <br>
-            <p>
+            <p style="text-align: justify;">
                 Ashley and Austin began dating around 2015. They first met at a birthday party for their mutual friend Duncan McKenzie.<br />
                 <br />Thru the following months they kept in touch and continued to see each other around other social events in Bowling Green, KY. On New Years Eve of 2015 - at a Pizza Riot show @Rocky's Bar - Ashley asked Austin for his number. They
                 began dating shortly after.<br />
@@ -111,51 +121,53 @@
 
         <!-- Photo Slideshow -->
         <div class="col sectionPadding">
+
+            <h3 style="text-align:center;"><b>#GreerWedding</b></h3>
+            <br>
+
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 5</div>
-                    <img src="./img/05a.png" style="width: 100%" />
-                    <div class="text"></div>
+                    <img class="slide" src="./img/05a.png" />
+                    <div class="text">Katelyn, Ashley, & Austin</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 5</div>
-                    <img src="./img/02a.png" style="width: 100%" />
-                    <div class="text">Engagement Photos</div>
+                    <img class="slide" src="./img/02a.png" />
+                    <div class="text">Engagement</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 5</div>
-                    <img src="./img/03a.png" style="width: 100%" />
+                    <img class="slide" src="./img/03a.png" />
                     <div class="text">@La Gala</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">4 / 5</div>
-                    <img src="./img/04a.png" style="width: 100%" />
+                    <img class="slide" src="./img/04a.png" />
                     <div class="text">Redwoods</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">5 / 5</div>
-                    <img src="./img/06a.png" style="width: 100%" />
+                    <img class="slide" src="./img/06a.png" />
                     <div class="text">DJing</div>
                 </div>
-                <br />
-                <h3 id="info" style="text-align: right; color: darkslategray;"><b>#GreerWedding</b></h3>
-
+                <br><br>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </div>
     </section>
 
-    <hr>
+    <hr class="anchor" id="info">
 
     <!-- Info -->
-    <section class="section info-section">
+    <section class="section info-section" style="background-color: darkslategray;">
         <!-- Wedding -->
-        <div class="col sectionPadding" style="text-align:center;">
+        <div class="col sectionPadding card">
             <h3>Wedding</h3>
             <br>
             <!-- <img src="./img/info1.svg" style="width:80px;" /> -->
@@ -169,22 +181,22 @@
             <br>
             <!-- Google Calendar -->
             <button class="btn" onclick="window.open('https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220123T000000Z%2F20220123T040000Z&location=The%20Charleston%20923%20College%20St%2C%20Bowling%20Green%2C%20KY%2042101&text=Greer%20Wedding', '_blank')">
-                <img src="img/gCal.png" style="height: 20px; width: 20px;" />
-            </button>
+                    <img src="img/gCal.png" style="height: 20px; width: 20px;" />
+                </button>
 
             <!-- iCalendar -->
             <button class="btn">
-                <img src="img/iCal.jpg" style="height: 20px; width: 20px;" />
-            </button>
+                    <img src="img/iCal.jpg" style="height: 20px; width: 20px;" />
+                </button>
 
             <!-- Outlook -->
             <button class="btn" onclick="window.open('https://outlook.live.com/calendar/0/deeplink/compose?enddt=2022-01-23T04%3A00%3A00%2B00%3A00&location=The%20Charleston%20923%20College%20St%2C%20Bowling%20Green%2C%20KY%2042101&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2022-01-23T00%3A00%3A00%2B00%3A00&subject=Greer%20Wedding', '_blank')">
-                <img src="img/oCal.jpg" style="height: 20px; width: 20px;" />
-            </button>
+                    <img src="img/oCal.jpg" style="height: 20px; width: 20px;" />
+                </button>
         </div>
 
         <!-- Ceremony -->
-        <div class="col sectionPadding" style="text-align:center;">
+        <div class="col sectionPadding card">
             <h3>Ceremony</h3>
             <br>
             <!-- <img src="./img/info2.svg" style="width:80px;" /> -->
@@ -198,7 +210,7 @@
         </div>
 
         <!-- Reception -->
-        <div class="col sectionPadding" style="text-align:center;">
+        <div class="col sectionPadding card">
             <h3>Reception</h3>
             <br>
             <!-- <img src="./img/info3.svg" style="width:80px;" /> -->
@@ -209,54 +221,8 @@
             <p>6:00 PM<br />923 College St - Bowling Green, KY</p>
             <br>
             <button class="btn" onclick="window.open('https://www.google.com/maps/place/The+Charleston/@36.9936891,-86.4446979,17z/data=!3m2!4b1!5s0x8865ef36eb44da59:0x1a716aea99f20d6f!4m5!3m4!1s0x8865ef369310de93:0xa92852996e4b7a6f!8m2!3d36.9936848!4d-86.4425092', '_blank')">
-                Directions
-            </button>
-        </div>
-    </section>
-
-    <hr>
-
-    <!-- Hotel Block -->
-    <section class="section info-section">
-        <div class="col sectionPadding" style="text-align: center;">
-            <p>
-                Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br>
-            </p>
-        </div>
-
-        <div class="col sectionPadding" style="text-align: center;">
-            <p>
-                Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br>
-            </p>
-        </div>
-
-        <div class="col sectionPadding" style="text-align: center;">
-            <p>
-                Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br>
-            </p>
-        </div>
-    </section>
-
-    <hr id="registry">
-
-    <!-- Registry -->
-    <section class="section info-section">
-        <!-- Amazon.com -->
-        <div class="col sectionPadding" style="text-align:center;">
-            <img src="./img/regAmazon.png" style="width:300px;" />
-            <br>
-            <button class="btn" onclick="window.open('https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ', '_blank')">
-                See Registry
-            </button>
-        </div>
-
-        <!-- Target.com -->
-        <div class="col sectionPadding" style="text-align:center;">
-            <img src="./img/regTarget.png" style="width:400px;" />
-            <br>
-            <button class="btn" onclick="window.open('https://www.target.com', '_blank')">
-                See Registry
-            </button>
+                    Directions
+                </button>
         </div>
     </section>
 
@@ -275,8 +241,50 @@
             <p>Places to stay?</p>
             <p>Any questions? Contacts us at:
                 <a href="mailto:austin.greer6@gmail.com">austin.greer6@gmail.com
-                </a>
+                    </a>
             </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Hotels -->
+    <section class="section info-section" style="background-color: darkslategray;">
+        <div class="col sectionPadding card" style="text-align: center;">
+            <p>
+                Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br>
+            </p>
+        </div>
+
+        <div class="col sectionPadding card" style="text-align: center;">
+            <p>
+                Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br>
+            </p>
+        </div>
+    </section>
+
+    <hr id="registry">
+
+    <!-- Registry -->
+    <section class="section info-section">
+        <!-- Amazon.com -->
+        <div class="col sectionPadding" style="text-align:center;">
+            <a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank"><img src="./img/regAmazon.png" style="width:300px;" /></a>
+            <br>
+            <button class="btn" onclick="window.open('https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ', '_blank')">
+                    See Registry
+                </button>
+        </div>
+
+        <div class="col vd" style="margin: 40px 0px;"></div>
+
+        <!-- Target.com -->
+        <div class="col sectionPadding" style="text-align:center;">
+            <a href="" target="_blank"><img src="./img/regTarget.png" style="width:400px;" /></a>
+            <br>
+            <button class="btn" onclick="window.open('https://www.target.com', '_blank')">
+                    See Registry
+                </button>
         </div>
     </section>
 
