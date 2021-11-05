@@ -130,11 +130,12 @@ hr {
 
 .hero-section {
     background-color: hsl(0, 0%, 100%, 35%);
-    background-image: url("/img/01.jpg");
+    background-image: url("/img/Ashley+Austin\(79of120\).jpg");
     filter: grayscale(0%);
     background-position: 50% 26%;
     background-size: cover;
     height: 120vh;
+    margin: 0px auto;
 }
 
 .section h1 {
