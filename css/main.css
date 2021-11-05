@@ -200,22 +200,6 @@ hr {
     padding: 10px;
 }
 
-.filter-blue {
-    filter: invert(17%) sepia(99%) saturate(2298%) hue-rotate(207deg) brightness(101%) contrast(116%);
-    /* background-color: #0045be; */
-}
-
-.filter-green {
-    /* filter: invert(26%) sepia(18%) saturate(799%) hue-rotate(131deg) brightness(95%) contrast(91%); */
-    filter: invert(78%) sepia(44%) saturate(7431%) hue-rotate(341deg) brightness(90%) contrast(91%);
-    /* background-color: #dc6e2d; */
-}
-
-.filter-plum {
-    filter: invert(15%) sepia(32%) saturate(5416%) hue-rotate(283deg) brightness(91%) contrast(123%);
-    /* background-color: #640064; */
-}
-
 .info-section img {
     width: 100%;
 }
