@@ -8,8 +8,8 @@
 }
 
 .anchor {
-    padding-top: 67px;
-    margin-top: -67px;
+    padding-top: 48px;
+    margin-top: -48px;
 }
 
 body {
@@ -42,9 +42,11 @@ hr {
 }
 
 .nav-menu {
+    margin: 0px auto;
     list-style: none;
-    display: flex;
     align-items: center;
+    display: flex;
+    font-weight: bold;
 }
 
 .nav-menu li a {

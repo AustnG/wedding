@@ -69,34 +69,28 @@
     - High-res hero
     - Widths on Registry images need to match // resize images to work better
     - About Us / Our Story
-    - Pics to replace placeholder icons in wedding section
     - More pics in carousel
     - Touch/swipe controls on photo carousel
-    - Apple Calendar link?
-    - Combine come of the wedding cards
-    - FAQ section
-    - Times on site?
-    - Add Hotels to stay in section // images // directions
     - Directions / Parking
     - Another RSVP button somewhere
     - Double check RSVP page height for scrolling
-    - Update URLS
-    - Wedding Party (remove from modal)
+    - Update URLs
 -->
 
 <body>
 
     <!-- Navigation -->
     <header class="header">
-        <a href="#">ASHLEY &amp; AUSTIN</a>
         <div class="menu-btn">
             <div class="menu-btn__lines"></div>
         </div>
         <ul class="nav-menu">
-            <li><a href="#" class="nav-item active">Home</a></li>
-            <li><a href="#info" alt="Info and Contact" class="nav-item">Info &amp; Contact</a></li>
+            <li><a href="#bride-groom" class="nav-item active">BRIDE & GROOM</a></li>
+            <li><a href="#wedding-party" alt="Info and Contact" class="nav-item">WEDDING PARTY</a></li>
+            <li><a href="#when-where" class="nav-item active">WHEN & WHERE</a></li>
+            <li><a href="#lodging" alt="Info and Contact" class="nav-item">LODGING</a></li>
+            <li><a href="#registries" alt="Registry" class="nav-item">REGISTRIES</a></li>
             <li><a href="./rsvp.html" alt="RSVP" class="nav-item">RSVP</a></li>
-            <li><a href="#registry" alt="Registry" class="nav-item">Registry</a></li>
         </ul>
     </header>
 
@@ -114,12 +108,15 @@
         </div>
     </section>
 
-    <!-- Us & Gallery -->
+    <hr class="anchor" id="bride-groom">
+
+    <!-- Bride & Groom + Gallery -->
     <section class="section info-section">
-        <!-- About Us -->
+
+        <!-- Our Story -->
         <div class="col sectionPadding">
             <p><i>For those who didn't know</i></p>
-            <h2 style="padding:5px 0px; color:darkslategray; text-decoration: underline;"><b>Our Story</b></h2>
+            <h2 style="padding:5px 0px; color:darkslategray; text-decoration: underline;"><b>OUR STORY</b></h2>
             <br>
             <p style="text-align: justify;">
                 Ashley and Austin began dating around 2015. They first met at a birthday party for their mutual friend Duncan McKenzie.<br />
@@ -173,108 +170,87 @@
         </div>
     </section>
 
-    <hr class="anchor" id="info">
+    <hr class="anchor" id="wedding-party">
 
-    <!-- Info -->
+    <!-- Wedding Party -->
+    <div style="padding:24px 0px; background-color: darkslategray; text-align: center;">
+        <h1 style="color: white;">THE WEDDING PARTY</h1>
+    </div>
     <section class="section info-section" style="background-color: darkslategray;">
-        <!-- Wedding -->
+        <!-- Bride -->
         <div class="col sectionPadding card">
-            <h3>Wedding</h3>
-            <br>
-            <!-- <img src="./img/info1.svg" style="width:80px;" /> -->
-            <img class="filter-blue" src="./img/event_black_48dp.svg" style="width:80px;" />
-            <br>
-            <br>
-            <p>Date<br /></p>
-            <p>
-                Jan 22nd, 2022<br /> Add to Calendar:
-            </p>
-            <br>
-            <!-- Google Calendar -->
-            <button class="btn" onclick="window.open('https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220123T000000Z%2F20220123T040000Z&location=The%20Charleston%20923%20College%20St%2C%20Bowling%20Green%2C%20KY%2042101&text=Greer%20Wedding', '_blank')">
-                    <img src="img/gCal.png" style="height: 20px; width: 20px;" />
-                </button>
-
-            <!-- iCalendar -->
-            <button class="btn">
-                    <img src="img/iCal.jpg" style="height: 20px; width: 20px;" />
-                </button>
-
-            <!-- Outlook -->
-            <button class="btn" onclick="window.open('https://outlook.live.com/calendar/0/deeplink/compose?enddt=2022-01-23T04%3A00%3A00%2B00%3A00&location=The%20Charleston%20923%20College%20St%2C%20Bowling%20Green%2C%20KY%2042101&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2022-01-23T00%3A00%3A00%2B00%3A00&subject=Greer%20Wedding', '_blank')">
-                    <img src="img/oCal.jpg" style="height: 20px; width: 20px;" />
-                </button>
+            Brittnye Denen<br> Matron of Honor<br><br>Katelyn Waters<br>Alvin Cain<br>Camilla Wilson
         </div>
 
+        <!-- Groom -->
+        <div class="col sectionPadding card">
+            <!--Zach Greer<br>Best Man<br><br>-->
+            Duncan McKenzie<br> Best Man<br><br>Jordan Speer<br>Max Schott<br>Casey Greer
+        </div>
+    </section>
+
+    <hr class="anchor" id="when-where">
+
+    <!-- When-Where -->
+    <section class="section info-section">
         <!-- Ceremony -->
         <div class="col sectionPadding card">
             <h3>Ceremony</h3>
             <br>
-            <!-- <img src="./img/info2.svg" style="width:80px;" /> -->
-            <img class="filter-green" src="./img/church_black_48dp.svg" style="width:80px;" />
+            <img src="img/c3.jpg" style="width:500px;" />
             <br>
             <br>
-            <p>The Charleston</p>
-            <p>4:00 PM<br />*Intimate ceremony with family</p>
-            <br>
-            <button class="btn" id="weddingParty">Wedding Party</button>
+            <p>Jan 22nd, 2022</p>
+            <p>*Intimate ceremony with family</p>
         </div>
 
         <!-- Reception -->
         <div class="col sectionPadding card">
             <h3>Reception</h3>
             <br>
-            <!-- <img src="./img/info3.svg" style="width:80px;" /> -->
-            <img class="filter-plum" src="./img/celebration_black_48dp.svg" style="width:80px;" />
+            <img src="img/c2.jpg" style="width:214px;" />
             <br>
             <br>
             <p>The Charleston</p>
-            <p>5:30 PM<br />923 College St - Bowling Green, KY</p>
+            <p>923 College St | Bowling Green, KY<br> 5:30 PM</p>
             <br>
             <button class="btn" onclick="window.open('https://www.google.com/maps/place/The+Charleston/@36.9936891,-86.4446979,17z/data=!3m2!4b1!5s0x8865ef36eb44da59:0x1a716aea99f20d6f!4m5!3m4!1s0x8865ef369310de93:0xa92852996e4b7a6f!8m2!3d36.9936848!4d-86.4425092', '_blank')">
-                    Directions
-                </button>
+                Directions
+            </button>
         </div>
     </section>
 
-    <hr>
+    <hr class="anchor" id="lodging">
 
-    <!-- FAQ -->
-    <section class="section info-section">
-
-        <!-- About Us -->
-        <div class="col sectionPadding" style="text-align: center;">
-            <p>Covid protocol?</p>
-            <p>Can I bring a date? Nah</p>
-            <p>Kids? Welcome</p>
-            <p>When whould I arrive? 5:30p</p>
-            <p>Where to park?</p>
-            <p>Places to stay?</p>
-            <p>Any questions? Contacts us at:
-                <a href="mailto:austin.greer6@gmail.com">austin.greer6@gmail.com
-                    </a>
-            </p>
-        </div>
-    </section>
-
-    <hr>
-
-    <!-- Hotels -->
+    <!-- Lodging -->
     <section class="section info-section" style="background-color: darkslategray;">
-        <div class="col sectionPadding card" style="text-align: center;">
-            <p>
-                Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br>
-            </p>
-        </div>
 
         <div class="col sectionPadding card" style="text-align: center;">
+            <h3>Hyatt Place Bowling Green</h3>
+            <br>
+            <img src="/img/Hyatt1.jpg" alt="Hyatt">
+            <br><br>
             <p>
-                Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br> Places to stay.<br>
+                1347 Center St<br> Bowling Green, KY 42101<br>
+                <br> (270) 467-0001<br> <a href="https://www.hyatt.com/en-US/hotel/kentucky/hyatt-place-bowling-green/bnazg" target="_blank">Book a Room Online</a>
             </p>
+            <br>
+            <p>
+                Guests of the Greer wedding may enjoy a complimentary breakfast buffet, a complimentary shuttle for guests to and from the wedding venue.<br><br> Please book before midnight on December 22, 2022 to take advantage of our special rate. Mention
+                the "Greer Wedding” when calling.
+            </p>
+
+            <br>
+
+            <button class="btn" onclick="window.open('https://www.google.com/maps/place/1347+Center+St,+Bowling+Green,+KY+42101/@36.9900899,-86.4527831,17z/data=!3m1!4b1!4m5!3m4!1s0x8865ef2da1499f4b:0xe853683348988832!8m2!3d36.9900856!4d-86.4505944', '_blank')">
+                Directions
+            </button>
+
         </div>
+
     </section>
 
-    <hr id="registry">
+    <hr class="anchor" id="registries">
 
     <!-- Registry -->
     <section class="section info-section">
@@ -283,8 +259,8 @@
             <a href="https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ" target="_blank"><img src="./img/regAmazon.png" style="width:300px;" /></a>
             <br>
             <button class="btn" onclick="window.open('https://www.amazon.com/wedding/ashley-stephenson-austin-greer-bowling-green-january-2022/registry/K8MLXA831LIZ', '_blank')">
-                    See Registry
-                </button>
+                See Registry
+            </button>
         </div>
 
         <div class="col vd" style="margin: 40px 0px;"></div>
@@ -294,106 +270,27 @@
             <a href="" target="_blank"><img src="./img/regTarget.png" style="width:400px;" /></a>
             <br>
             <button class="btn" onclick="window.open('https://www.target.com/gift-registry/gift-giver?registryId=0d3c0360-13e8-11ec-81bf-79301af345cd&type=WEDDING', '_blank')">
-                    See Registry
-                </button>
+                See Registry
+            </button>
         </div>
     </section>
 
+    <!-- RSVP -->
+    <section class="section info-section" style="background-color: darkslategray;">
+        <div class="col sectionPadding" style="text-align:center;">
+            RSVP
+        </div>
+    </section>
+
+    <hr>
+
     <!-- Footer -->
     <footer class="footer">
-        <p>- A&amp;A -<br /><br />&copy; Austin Greer 2021</p>
+        <p>Use #GreerWedding on Instagram to help us share our special day!<br><br> - A&amp;A -<br><br> Any questions? Contacts us at: <a href="mailto:austin.greer6@gmail.com">austin.greer6@gmail.com</a><br><br> &copy; Austin Greer 2021</p>
     </footer>
 
-    <!-- Modal -->
-    <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <!-- Wedding Party -->
-            <div id="wedding-party">
-                <h1 class="w3-center w3-text-grey"><b>Wedding Party</b></h1>
-                <div class="w3-row">
-                    <div class="w3-half">
-                        <table>
-                            <tr>
-                                <td>Brittnye Denen</td>
-                                <td>Maid/Matron of Honor</td>
-                            </tr>
-                            <tr>
-                                <td>Katelyn Waters</td>
-                                <td>Bridesmaid</td>
-                            </tr>
-                            <tr>
-                                <td>Alvin Cain</td>
-                                <td>Bridesmaid</td>
-                            </tr>
-                            <tr>
-                                <td>Camilla Wilson</td>
-                                <td>Bridesmaid</td>
-                            </tr>
-                            <!-- <tr>
-                                <td>Anna Marsili</td>
-                                <td>Bridesmaid</td>
-                            </tr> -->
-                        </table>
-                    </div>
-                    <div class="w3-half">
-                        <table>
-                            <!-- <tr>
-                                <td>Zach Greer</td>
-                                <td>Best Man</td>
-                            </tr> -->
-                            <tr>
-                                <td>Duncan McKenzie</td>
-                                <td>Groomsman</td>
-                            </tr>
-                            <tr>
-                                <td>Jordan Speer</td>
-                                <td>Groomsman</td>
-                            </tr>
-                            <tr>
-                                <td>Max Schott</td>
-                                <td>Groomsman</td>
-                            </tr>
-                            <tr>
-                                <td>Casey Greer</td>
-                                <td>Groomswoman</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script src="./js/gallery.js"></script>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("weddingParty");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        };
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        };
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        };
-    </script>
 </body>
 
 </html>
